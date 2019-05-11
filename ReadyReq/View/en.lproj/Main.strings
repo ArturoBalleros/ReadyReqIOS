@@ -1,0 +1,465 @@
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "1Ms-mR-l3J"; */
+"1Ms-mR-l3J.text" = "Category";
+
+/* Class = "UITabBarItem"; title = "Sources"; ObjectID = "1Pb-C2-oAv"; */
+"1Pb-C2-oAv.title" = "Sources";
+
+/* Class = "UIButton"; normalTitle = "V"; ObjectID = "1eN-94-gf0"; */
+"1eN-94-gf0.normalTitle" = "V";
+
+/* Class = "UIButton"; normalTitle = "V"; ObjectID = "22t-s2-xiO"; */
+"22t-s2-xiO.normalTitle" = "V";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "263-d2-Ch1"; */
+"263-d2-Ch1.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Stability"; ObjectID = "2JL-RB-oSU"; */
+"2JL-RB-oSU.text" = "Stability";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "2K2-Af-pfJ"; */
+"2K2-Af-pfJ.text" = "State";
+
+/* Class = "UITabBarItem"; title = "Data"; ObjectID = "2Ng-GW-Sm6"; */
+"2Ng-GW-Sm6.title" = "Data";
+
+/* Class = "UITabBarItem"; title = "Actor"; ObjectID = "2Pf-xD-YC4"; */
+"2Pf-xD-YC4.title" = "Actor";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "46M-gd-Xhx"; */
+"46M-gd-Xhx.text" = "Category";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "4B4-Xv-26z"; */
+"4B4-Xv-26z.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "4Fs-zf-b9D"; */
+"4Fs-zf-b9D.text" = "Category";
+
+/* Class = "UITabBarItem"; title = "Subobjetives"; ObjectID = "5SB-p2-Hcy"; */
+"5SB-p2-Hcy.title" = "Subobjetives";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "5qI-35-AyM"; */
+"5qI-35-AyM.placeholder" = "Search";
+
+/* Class = "UITabBarItem"; title = "Objetives"; ObjectID = "69E-28-L5H"; */
+"69E-28-L5H.title" = "Objetives";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "6ZE-hD-U77"; */
+"6ZE-hD-U77.placeholder" = "Name";
+
+/* Class = "UITabBarItem"; title = "Sources"; ObjectID = "7pT-sL-TZ9"; */
+"7pT-sL-TZ9.title" = "Sources";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "8fp-LX-dZV"; */
+"8fp-LX-dZV.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "8tc-eo-4jU"; */
+"8tc-eo-4jU.text" = "Category";
+
+/* Class = "UITabBarItem"; title = "R. Functional"; ObjectID = "8yI-Hb-lFL"; */
+"8yI-Hb-lFL.title" = "R. Functional";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "9QV-IG-dRQ"; */
+"9QV-IG-dRQ.text" = "Category";
+
+/* Class = "UITabBarItem"; title = "Objetives"; ObjectID = "9c5-OB-bxl"; */
+"9c5-OB-bxl.title" = "Objetives";
+
+/* Class = "UITabBarItem"; title = "S. Nor"; ObjectID = "9tt-c5-UVw"; */
+"9tt-c5-UVw.title" = "S. Nor";
+
+/* Class = "UITabBarItem"; title = "R. Information"; ObjectID = "9zX-Gh-snO"; */
+"9zX-Gh-snO.title" = "R. Information";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "A3Y-bN-d0S"; */
+"A3Y-bN-d0S.title" = "Delete";
+
+/* Class = "UILabel"; text = "Urgency"; ObjectID = "AMV-V1-hqM"; */
+"AMV-V1-hqM.text" = "Urgency";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "AQR-tp-R1j"; */
+"AQR-tp-R1j.title" = "Delete";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Anp-HL-BR7"; */
+"Anp-HL-BR7.title" = "Delete";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "Axl-d1-2ZX"; */
+"Axl-d1-2ZX.placeholder" = "Description";
+
+/* Class = "UITextField"; placeholder = "User"; ObjectID = "BdH-jv-fsU"; */
+"BdH-jv-fsU.placeholder" = "User";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "CgM-zh-t7s"; */
+"CgM-zh-t7s.title" = "Delete";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Che-1b-Yxn"; */
+"Che-1b-Yxn.title" = "Delete";
+
+/* Class = "UITabBarItem"; title = "Objetives"; ObjectID = "DM7-vd-qcX"; */
+"DM7-vd-qcX.title" = "Objetives";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "DdK-p3-dtq"; */
+"DdK-p3-dtq.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Maximum"; ObjectID = "ECX-Qc-dTx"; */
+"ECX-Qc-dTx.text" = "Maximum";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "EEI-Wb-RPb"; */
+"EEI-Wb-RPb.placeholder" = "Search";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "EGM-jH-H4m"; */
+"EGM-jH-H4m.placeholder" = "Search";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "EKp-xK-Qff"; */
+"EKp-xK-Qff.placeholder" = "Search";
+
+/* Class = "UITabBarItem"; title = "Authors"; ObjectID = "EXN-oq-7Ib"; */
+"EXN-oq-7Ib.title" = "Authors";
+
+/* Class = "UITextField"; placeholder = "Organización"; ObjectID = "F6q-lW-lvq"; */
+"F6q-lW-lvq.placeholder" = "Organización";
+
+/* Class = "UITabBarItem"; title = "Requerements"; ObjectID = "Fje-j7-8Ny"; */
+"Fje-j7-8Ny.title" = "Requerements";
+
+/* Class = "UILabel"; text = "Complexity"; ObjectID = "GpT-jT-ZBL"; */
+"GpT-jT-ZBL.text" = "Complexity";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Gvq-0v-JKI"; */
+"Gvq-0v-JKI.title" = "Delete";
+
+/* Class = "UILabel"; text = "Is Develop"; ObjectID = "H1K-kb-cEo"; */
+"H1K-kb-cEo.text" = "Is Develop";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "H7y-az-a01"; */
+"H7y-az-a01.text" = "State";
+
+/* Class = "UIButton"; normalTitle = "V"; ObjectID = "Haq-qm-JHu"; */
+"Haq-qm-JHu.normalTitle" = "V";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Hlb-4Q-Cj2"; */
+"Hlb-4Q-Cj2.title" = "Delete";
+
+/* Class = "UITextField"; placeholder = "Desc. Comple."; ObjectID = "Ic8-bO-bGP"; */
+"Ic8-bO-bGP.placeholder" = "Desc. Comple.";
+
+/* Class = "UITabBarItem"; title = "Actors"; ObjectID = "Ihp-od-DXJ"; */
+"Ihp-od-DXJ.title" = "Actors";
+
+/* Class = "UITabBarItem"; title = "Configuration"; ObjectID = "JVb-8N-59D"; */
+"JVb-8N-59D.title" = "Configuration";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "K0i-M9-roW"; */
+"K0i-M9-roW.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "KYW-e4-cHA"; */
+"KYW-e4-cHA.text" = "100";
+
+/* Class = "UIBarButtonItem"; title = "Order"; ObjectID = "KnZ-TK-R5Y"; */
+"KnZ-TK-R5Y.title" = "Order";
+
+/* Class = "UITextField"; placeholder = "Ip Server"; ObjectID = "Knp-x3-3x4"; */
+"Knp-x3-3x4.placeholder" = "Ip Server";
+
+/* Class = "UILabel"; text = "Urgency"; ObjectID = "LOP-T7-Own"; */
+"LOP-T7-Own.text" = "Urgency";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Llx-CY-Koh"; */
+"Llx-CY-Koh.title" = "Delete";
+
+/* Class = "UITabBarItem"; title = "Sources"; ObjectID = "MBw-35-2UA"; */
+"MBw-35-2UA.title" = "Sources";
+
+/* Class = "UITextField"; placeholder = "Port"; ObjectID = "Msv-eX-z0J"; */
+"Msv-eX-z0J.placeholder" = "Port";
+
+/* Class = "UITextField"; text = "3306"; ObjectID = "Msv-eX-z0J"; */
+"Msv-eX-z0J.text" = "3306";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "NLd-Ih-kXQ"; */
+"NLd-Ih-kXQ.title" = "Delete";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "Nda-7u-JF7"; */
+"Nda-7u-JF7.placeholder" = "Search";
+
+/* Class = "UITabBarItem"; title = "Objetives"; ObjectID = "Ne0-5Y-uQU"; */
+"Ne0-5Y-uQU.title" = "Objetives";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "O6D-vy-UZo"; */
+"O6D-vy-UZo.placeholder" = "Name";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "OM3-ii-caB"; */
+"OM3-ii-caB.title" = "Delete";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "PDI-PW-Or5"; */
+"PDI-PW-Or5.title" = "Delete";
+
+/* Class = "UILabel"; text = "Stability"; ObjectID = "Pba-uh-psz"; */
+"Pba-uh-psz.text" = "Stability";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "QGI-PR-H24"; */
+"QGI-PR-H24.title" = "Delete";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "Qq8-hR-T1j"; */
+"Qq8-hR-T1j.placeholder" = "Search";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "RSB-VZ-rUy"; */
+"RSB-VZ-rUy.title" = "Delete";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "Rhe-Tz-39q"; */
+"Rhe-Tz-39q.placeholder" = "Search";
+
+/* Class = "UITabBarItem"; title = "Authors"; ObjectID = "Rwb-EL-jUP"; */
+"Rwb-EL-jUP.title" = "Authors";
+
+/* Class = "UITabBarItem"; title = "Data"; ObjectID = "SF4-dd-2dQ"; */
+"SF4-dd-2dQ.title" = "Data";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "SG7-BE-k9V"; */
+"SG7-BE-k9V.text" = "State";
+
+/* Class = "UILabel"; text = "Urgency"; ObjectID = "SOa-XS-0ok"; */
+"SOa-XS-0ok.text" = "Urgency";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Saq-GB-HNv"; */
+"Saq-GB-HNv.title" = "Delete";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "TMb-L0-fk4"; */
+"TMb-L0-fk4.text" = "Category";
+
+/* Class = "UITabBarItem"; title = "Data"; ObjectID = "TxN-Fa-lKl"; */
+"TxN-Fa-lKl.title" = "Data";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "UKE-Mf-boa"; */
+"UKE-Mf-boa.title" = "Delete";
+
+/* Class = "UILabel"; text = "Priority"; ObjectID = "Ub9-Vx-aqq"; */
+"Ub9-Vx-aqq.text" = "Priority";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "V0U-ul-fbc"; */
+"V0U-ul-fbc.title" = "Delete";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "V2A-f9-1Zl"; */
+"V2A-f9-1Zl.text" = "Category";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "VJl-4D-sgJ"; */
+"VJl-4D-sgJ.placeholder" = "Search";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "VN6-xa-XI3"; */
+"VN6-xa-XI3.placeholder" = "Search";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "Wft-Hj-5bt"; */
+"Wft-Hj-5bt.placeholder" = "Search";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "XJa-se-tDL"; */
+"XJa-se-tDL.placeholder" = "Search";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "XOZ-JV-8Wa"; */
+"XOZ-JV-8Wa.title" = "Delete";
+
+/* Class = "UITabBarItem"; title = "Data"; ObjectID = "XyU-fS-dUg"; */
+"XyU-fS-dUg.title" = "Data";
+
+/* Class = "UILabel"; text = "Medium"; ObjectID = "YV4-rK-zeb"; */
+"YV4-rK-zeb.text" = "Medium";
+
+/* Class = "UITabBarItem"; title = "R. Non-Functional"; ObjectID = "YdX-HN-C3s"; */
+"YdX-HN-C3s.title" = "R. Non-Functional";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "ZBn-2j-NhM"; */
+"ZBn-2j-NhM.text" = "100";
+
+/* Class = "UITextField"; placeholder = "Database"; ObjectID = "ZFP-kR-7Z3"; */
+"ZFP-kR-7Z3.placeholder" = "Database";
+
+/* Class = "UITabBarItem"; title = "Authors"; ObjectID = "ZX0-jL-S2N"; */
+"ZX0-jL-S2N.title" = "Authors";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "ZmP-Nw-UAX"; */
+"ZmP-Nw-UAX.text" = "State";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "aNS-Dq-bCH"; */
+"aNS-Dq-bCH.placeholder" = "Description";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "aZU-Qu-TzM"; */
+"aZU-Qu-TzM.title" = "Delete";
+
+/* Class = "UITabBarItem"; title = "Group"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Group";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "bHe-dz-7Xg"; */
+"bHe-dz-7Xg.placeholder" = "Name";
+
+/* Class = "UITabBarItem"; title = "Data E."; ObjectID = "cIk-Tr-9Lt"; */
+"cIk-Tr-9Lt.title" = "Data E.";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "cJc-hy-6CP"; */
+"cJc-hy-6CP.placeholder" = "Description";
+
+/* Class = "UITabBarItem"; title = "Packages"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Packages";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "cZ9-VK-aKi"; */
+"cZ9-VK-aKi.title" = "Delete";
+
+/* Class = "UILabel"; text = "Maximum"; ObjectID = "csN-mK-bPc"; */
+"csN-mK-bPc.text" = "Maximum";
+
+/* Class = "UILabel"; text = "Priority"; ObjectID = "ctS-J2-3aU"; */
+"ctS-J2-3aU.text" = "Priority";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "dA8-gP-wCB"; */
+"dA8-gP-wCB.title" = "Delete";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "dha-86-ud5"; */
+"dha-86-ud5.text" = "100";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "eDI-I7-d0S"; */
+"eDI-I7-d0S.normalTitle" = "X";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "eOk-yS-q5P"; */
+"eOk-yS-q5P.title" = "Delete";
+
+/* Class = "UITabBarItem"; title = "Sources"; ObjectID = "f6h-ew-mIP"; */
+"f6h-ew-mIP.title" = "Sources";
+
+/* Class = "UILabel"; text = "Priority"; ObjectID = "fE3-Q8-4BI"; */
+"fE3-Q8-4BI.text" = "Priority";
+
+/* Class = "UITabBarItem"; title = "Data"; ObjectID = "fSs-3z-8Hp"; */
+"fSs-3z-8Hp.title" = "Data";
+
+/* Class = "UITabBarItem"; title = "Requerements"; ObjectID = "faF-Q0-SXS"; */
+"faF-Q0-SXS.title" = "Requerements";
+
+/* Class = "UITabBarItem"; title = "Authors"; ObjectID = "g37-Fb-FmP"; */
+"g37-Fb-FmP.title" = "Authors";
+
+/* Class = "UILabel"; text = "Stability"; ObjectID = "ges-Y9-luO"; */
+"ges-Y9-luO.text" = "Stability";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "hXN-kS-RQb"; */
+"hXN-kS-RQb.text" = "100";
+
+/* Class = "UITextField"; placeholder = "Precondition"; ObjectID = "hdH-pz-HUX"; */
+"hdH-pz-HUX.placeholder" = "Precondition";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "hfr-Df-XwI"; */
+"hfr-Df-XwI.placeholder" = "Search";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "ifP-uh-KDP"; */
+"ifP-uh-KDP.placeholder" = "Search";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "irF-M9-0YJ"; */
+"irF-M9-0YJ.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Urgency"; ObjectID = "jAp-CD-p5e"; */
+"jAp-CD-p5e.text" = "Urgency";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "jFp-FD-RpN"; */
+"jFp-FD-RpN.title" = "Delete";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "l3r-L7-IgN"; */
+"l3r-L7-IgN.placeholder" = "Search";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "lLh-Tg-vnh"; */
+"lLh-Tg-vnh.placeholder" = "Search";
+
+/* Class = "UITabBarItem"; title = "Requerements"; ObjectID = "lkR-wT-0bL"; */
+"lkR-wT-0bL.title" = "Requerements";
+
+/* Class = "UIBarButtonItem"; title = "Order"; ObjectID = "m9E-4q-ZS8"; */
+"m9E-4q-ZS8.title" = "Order";
+
+/* Class = "UIBarButtonItem"; title = "Order"; ObjectID = "mO6-ot-dtr"; */
+"mO6-ot-dtr.title" = "Order";
+
+/* Class = "UITextField"; placeholder = "Rol"; ObjectID = "mQC-pA-Avw"; */
+"mQC-pA-Avw.placeholder" = "Rol";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "mWu-Dn-Xoh"; */
+"mWu-Dn-Xoh.title" = "Delete";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "mau-Ek-cbO"; */
+"mau-Ek-cbO.title" = "Delete";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "nYa-Of-zOz"; */
+"nYa-Of-zOz.placeholder" = "Search";
+
+/* Class = "UIButton"; normalTitle = "Connect and Save"; ObjectID = "nc1-vr-u8l"; */
+"nc1-vr-u8l.normalTitle" = "Connect and Save";
+
+/* Class = "UITabBarItem"; title = "S. Exc"; ObjectID = "nm6-kx-b6M"; */
+"nm6-kx-b6M.title" = "S. Exc";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "noV-fo-Jg7"; */
+"noV-fo-Jg7.title" = "Delete";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "nwe-6F-51l"; */
+"nwe-6F-51l.placeholder" = "Name";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "od9-Nk-cnJ"; */
+"od9-Nk-cnJ.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "Time of Life"; ObjectID = "pwb-tI-VGl"; */
+"pwb-tI-VGl.text" = "Time of Life";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "r0n-SX-Qm1"; */
+"r0n-SX-Qm1.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Package"; ObjectID = "s38-ea-sjF"; */
+"s38-ea-sjF.text" = "Package";
+
+/* Class = "UITextField"; placeholder = "Postcondition"; ObjectID = "sbA-LC-e67"; */
+"sbA-LC-e67.placeholder" = "Postcondition";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "uIv-em-zRV"; */
+"uIv-em-zRV.placeholder" = "Search";
+
+/* Class = "UITabBarItem"; title = "Sources"; ObjectID = "uaO-ce-yWA"; */
+"uaO-ce-yWA.title" = "Sources";
+
+/* Class = "UILabel"; text = "Priority"; ObjectID = "udg-hX-SVs"; */
+"udg-hX-SVs.text" = "Priority";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "ugc-50-V7Z"; */
+"ugc-50-V7Z.title" = "Delete";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "vz2-mf-Bnw"; */
+"vz2-mf-Bnw.title" = "Delete";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "w9k-do-5b4"; */
+"w9k-do-5b4.placeholder" = "Search";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "wQj-GV-bYW"; */
+"wQj-GV-bYW.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Stability"; ObjectID = "wgf-bH-kH1"; */
+"wgf-bH-kH1.text" = "Stability";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "wlW-Ch-lua"; */
+"wlW-Ch-lua.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Ocurrences"; ObjectID = "x3u-7q-Bvm"; */
+"x3u-7q-Bvm.text" = "Ocurrences";
+
+/* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "xlA-ER-uXb"; */
+"xlA-ER-uXb.title" = "Delete";
+
+/* Class = "UITabBarItem"; title = "Authors"; ObjectID = "yA4-bg-uNW"; */
+"yA4-bg-uNW.title" = "Authors";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "zFZ-bZ-Swc"; */
+"zFZ-bZ-Swc.placeholder" = "Description";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "zKf-nj-cdN"; */
+"zKf-nj-cdN.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "Medium"; ObjectID = "zSi-PV-vMx"; */
+"zSi-PV-vMx.text" = "Medium";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "zcK-qI-nAf"; */
+"zcK-qI-nAf.placeholder" = "Name";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "zkj-su-uQu"; */
+"zkj-su-uQu.placeholder" = "Search";

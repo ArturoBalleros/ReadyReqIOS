@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  ReadyReq
+
+  Created by Arturo Balleros Albillo on 26/11/2018.
+  Copyright © 2018 Arturo Balleros Albillo. All rights reserved.
+*/
+
+"TXT_EMPTY" = "Rellene";
+
+"ERROR_URL" = "Error to convert URL";
+"ERROR_EMPTY_PARAM" = "The are empty parameters";
+"ERROR_EMPTY_QUERY" = "The query is empty";
+"ERROR_QUERY" = "Error with the query";
+"ERROR_READ_FILE" = "The file could not be read";
+"ERROR_CONNECT" = "Unable to connect to server";
+"CONF_FRAG_ERROR_1" = "The file could not be written";
+"SUCCESS" = "Correcto";
+
+"VLOW" = "Very Low";
+"LOW" = "Low";
+"MED" = "Medium";
+"HIGH" = "High";
+"VHIGH" = "Very High";
+
+"ORDER" = "Order";
+"SELECT" = "Select";
+"REF" = "Pull to refresh";

@@ -1,0 +1,465 @@
+
+/* Class = "UILabel"; text = "Categoría"; ObjectID = "1Ms-mR-l3J"; */
+"1Ms-mR-l3J.text" = "Categoría";
+
+/* Class = "UITabBarItem"; title = "Fuentes"; ObjectID = "1Pb-C2-oAv"; */
+"1Pb-C2-oAv.title" = "Fuentes";
+
+/* Class = "UIButton"; normalTitle = "V"; ObjectID = "1eN-94-gf0"; */
+"1eN-94-gf0.normalTitle" = "V";
+
+/* Class = "UIButton"; normalTitle = "V"; ObjectID = "22t-s2-xiO"; */
+"22t-s2-xiO.normalTitle" = "V";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "263-d2-Ch1"; */
+"263-d2-Ch1.placeholder" = "Nombre";
+
+/* Class = "UILabel"; text = "Estabilidad"; ObjectID = "2JL-RB-oSU"; */
+"2JL-RB-oSU.text" = "Estabilidad";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "2K2-Af-pfJ"; */
+"2K2-Af-pfJ.text" = "Estado";
+
+/* Class = "UITabBarItem"; title = "Datos"; ObjectID = "2Ng-GW-Sm6"; */
+"2Ng-GW-Sm6.title" = "Datos";
+
+/* Class = "UITabBarItem"; title = "Actor"; ObjectID = "2Pf-xD-YC4"; */
+"2Pf-xD-YC4.title" = "Actor";
+
+/* Class = "UILabel"; text = "Categoría"; ObjectID = "46M-gd-Xhx"; */
+"46M-gd-Xhx.text" = "Categoría";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "4B4-Xv-26z"; */
+"4B4-Xv-26z.placeholder" = "Buscar";
+
+/* Class = "UILabel"; text = "Categoría"; ObjectID = "4Fs-zf-b9D"; */
+"4Fs-zf-b9D.text" = "Categoría";
+
+/* Class = "UITabBarItem"; title = "subobjetivos"; ObjectID = "5SB-p2-Hcy"; */
+"5SB-p2-Hcy.title" = "Subobjetivos";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "5qI-35-AyM"; */
+"5qI-35-AyM.placeholder" = "Buscar";
+
+/* Class = "UITabBarItem"; title = "Objetivos"; ObjectID = "69E-28-L5H"; */
+"69E-28-L5H.title" = "Objetivos";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "6ZE-hD-U77"; */
+"6ZE-hD-U77.placeholder" = "Nombre";
+
+/* Class = "UITabBarItem"; title = "Fuentes"; ObjectID = "7pT-sL-TZ9"; */
+"7pT-sL-TZ9.title" = "Fuentes";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "8fp-LX-dZV"; */
+"8fp-LX-dZV.placeholder" = "Nombre";
+
+/* Class = "UILabel"; text = "Categoría"; ObjectID = "8tc-eo-4jU"; */
+"8tc-eo-4jU.text" = "Categoría";
+
+/* Class = "UITabBarItem"; title = "R. Functional"; ObjectID = "8yI-Hb-lFL"; */
+"8yI-Hb-lFL.title" = "R. Funcional";
+
+/* Class = "UILabel"; text = "Categoría"; ObjectID = "9QV-IG-dRQ"; */
+"9QV-IG-dRQ.text" = "Categoría";
+
+/* Class = "UITabBarItem"; title = "Objetivos"; ObjectID = "9c5-OB-bxl"; */
+"9c5-OB-bxl.title" = "Objetivos";
+
+/* Class = "UITabBarItem"; title = "S. Nor"; ObjectID = "9tt-c5-UVw"; */
+"9tt-c5-UVw.title" = "S. Nor";
+
+/* Class = "UITabBarItem"; title = "R. Information"; ObjectID = "9zX-Gh-snO"; */
+"9zX-Gh-snO.title" = "R. Información";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "A3Y-bN-d0S"; */
+"A3Y-bN-d0S.title" = "Eliminar";
+
+/* Class = "UILabel"; text = "Urgencia"; ObjectID = "AMV-V1-hqM"; */
+"AMV-V1-hqM.text" = "Urgencia";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "AQR-tp-R1j"; */
+"AQR-tp-R1j.title" = "Eliminar";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "Anp-HL-BR7"; */
+"Anp-HL-BR7.title" = "Eliminar";
+
+/* Class = "UITextField"; placeholder = "Descripción"; ObjectID = "Axl-d1-2ZX"; */
+"Axl-d1-2ZX.placeholder" = "Descripción";
+
+/* Class = "UITextField"; placeholder = "User"; ObjectID = "BdH-jv-fsU"; */
+"BdH-jv-fsU.placeholder" = "Usuario";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "CgM-zh-t7s"; */
+"CgM-zh-t7s.title" = "Eliminar";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "Che-1b-Yxn"; */
+"Che-1b-Yxn.title" = "Eliminar";
+
+/* Class = "UITabBarItem"; title = "Objetives"; ObjectID = "DM7-vd-qcX"; */
+"DM7-vd-qcX.title" = "Objetivos";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "DdK-p3-dtq"; */
+"DdK-p3-dtq.placeholder" = "Buscar";
+
+/* Class = "UILabel"; text = "Máximo"; ObjectID = "ECX-Qc-dTx"; */
+"ECX-Qc-dTx.text" = "Máximo";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "EEI-Wb-RPb"; */
+"EEI-Wb-RPb.placeholder" = "Buscar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "EGM-jH-H4m"; */
+"EGM-jH-H4m.placeholder" = "Buscar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "EKp-xK-Qff"; */
+"EKp-xK-Qff.placeholder" = "Buscar";
+
+/* Class = "UITabBarItem"; title = "Autores"; ObjectID = "EXN-oq-7Ib"; */
+"EXN-oq-7Ib.title" = "Autores";
+
+/* Class = "UITextField"; placeholder = "Organización"; ObjectID = "F6q-lW-lvq"; */
+"F6q-lW-lvq.placeholder" = "Organización";
+
+/* Class = "UITabBarItem"; title = "Requisitos"; ObjectID = "Fje-j7-8Ny"; */
+"Fje-j7-8Ny.title" = "Requisitos";
+
+/* Class = "UILabel"; text = "Complejidad"; ObjectID = "GpT-jT-ZBL"; */
+"GpT-jT-ZBL.text" = "Complejidad";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "Gvq-0v-JKI"; */
+"Gvq-0v-JKI.title" = "Eliminar";
+
+/* Class = "UILabel"; text = "Es Desarrollador"; ObjectID = "H1K-kb-cEo"; */
+"H1K-kb-cEo.text" = "Es Desarrollador";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "H7y-az-a01"; */
+"H7y-az-a01.text" = "Estado";
+
+/* Class = "UIButton"; normalTitle = "V"; ObjectID = "Haq-qm-JHu"; */
+"Haq-qm-JHu.normalTitle" = "V";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "Hlb-4Q-Cj2"; */
+"Hlb-4Q-Cj2.title" = "Eliminar";
+
+/* Class = "UITextField"; placeholder = "Desc. Comple."; ObjectID = "Ic8-bO-bGP"; */
+"Ic8-bO-bGP.placeholder" = "Desc. Comple.";
+
+/* Class = "UITabBarItem"; title = "Actores"; ObjectID = "Ihp-od-DXJ"; */
+"Ihp-od-DXJ.title" = "Actores";
+
+/* Class = "UITabBarItem"; title = "Configuration"; ObjectID = "JVb-8N-59D"; */
+"JVb-8N-59D.title" = "Configuración";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "K0i-M9-roW"; */
+"K0i-M9-roW.placeholder" = "Contraseña";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "KYW-e4-cHA"; */
+"KYW-e4-cHA.text" = "100";
+
+/* Class = "UIBarButtonItem"; title = "Order"; ObjectID = "KnZ-TK-R5Y"; */
+"KnZ-TK-R5Y.title" = "Ordenar";
+
+/* Class = "UITextField"; placeholder = "Ip Server"; ObjectID = "Knp-x3-3x4"; */
+"Knp-x3-3x4.placeholder" = "Ip Servidor";
+
+/* Class = "UILabel"; text = "Urgencia"; ObjectID = "LOP-T7-Own"; */
+"LOP-T7-Own.text" = "Urgencia";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "Llx-CY-Koh"; */
+"Llx-CY-Koh.title" = "Eliminar";
+
+/* Class = "UITabBarItem"; title = "Fuentes"; ObjectID = "MBw-35-2UA"; */
+"MBw-35-2UA.title" = "Fuentes";
+
+/* Class = "UITextField"; placeholder = "Port"; ObjectID = "Msv-eX-z0J"; */
+"Msv-eX-z0J.placeholder" = "Puerto";
+
+/* Class = "UITextField"; text = "3306"; ObjectID = "Msv-eX-z0J"; */
+"Msv-eX-z0J.text" = "3306";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "NLd-Ih-kXQ"; */
+"NLd-Ih-kXQ.title" = "Eliminar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "Nda-7u-JF7"; */
+"Nda-7u-JF7.placeholder" = "Buscar";
+
+/* Class = "UITabBarItem"; title = "Objetivos"; ObjectID = "Ne0-5Y-uQU"; */
+"Ne0-5Y-uQU.title" = "Objetivos";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "O6D-vy-UZo"; */
+"O6D-vy-UZo.placeholder" = "Nombre";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "OM3-ii-caB"; */
+"OM3-ii-caB.title" = "Eliminar";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "PDI-PW-Or5"; */
+"PDI-PW-Or5.title" = "Eliminar";
+
+/* Class = "UILabel"; text = "Estabilidad"; ObjectID = "Pba-uh-psz"; */
+"Pba-uh-psz.text" = "Estabilidad";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "QGI-PR-H24"; */
+"QGI-PR-H24.title" = "Eliminar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "Qq8-hR-T1j"; */
+"Qq8-hR-T1j.placeholder" = "Buscar";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "RSB-VZ-rUy"; */
+"RSB-VZ-rUy.title" = "Eliminar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "Rhe-Tz-39q"; */
+"Rhe-Tz-39q.placeholder" = "Buscar";
+
+/* Class = "UITabBarItem"; title = "Autores"; ObjectID = "Rwb-EL-jUP"; */
+"Rwb-EL-jUP.title" = "Autores";
+
+/* Class = "UITabBarItem"; title = "Datos"; ObjectID = "SF4-dd-2dQ"; */
+"SF4-dd-2dQ.title" = "Datos";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "SG7-BE-k9V"; */
+"SG7-BE-k9V.text" = "Estado";
+
+/* Class = "UILabel"; text = "Urgencia"; ObjectID = "SOa-XS-0ok"; */
+"SOa-XS-0ok.text" = "Urgencia";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "Saq-GB-HNv"; */
+"Saq-GB-HNv.title" = "Eliminar";
+
+/* Class = "UILabel"; text = "Categoría"; ObjectID = "TMb-L0-fk4"; */
+"TMb-L0-fk4.text" = "Categoría";
+
+/* Class = "UITabBarItem"; title = "Datos"; ObjectID = "TxN-Fa-lKl"; */
+"TxN-Fa-lKl.title" = "Datos";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "UKE-Mf-boa"; */
+"UKE-Mf-boa.title" = "Eliminar";
+
+/* Class = "UILabel"; text = "Prioridad"; ObjectID = "Ub9-Vx-aqq"; */
+"Ub9-Vx-aqq.text" = "Prioridad";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "V0U-ul-fbc"; */
+"V0U-ul-fbc.title" = "Eliminar";
+
+/* Class = "UILabel"; text = "Categoría"; ObjectID = "V2A-f9-1Zl"; */
+"V2A-f9-1Zl.text" = "Categoría";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "VJl-4D-sgJ"; */
+"VJl-4D-sgJ.placeholder" = "Buscar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "VN6-xa-XI3"; */
+"VN6-xa-XI3.placeholder" = "Buscar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "Wft-Hj-5bt"; */
+"Wft-Hj-5bt.placeholder" = "Buscar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "XJa-se-tDL"; */
+"XJa-se-tDL.placeholder" = "Buscar";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "XOZ-JV-8Wa"; */
+"XOZ-JV-8Wa.title" = "Eliminar";
+
+/* Class = "UITabBarItem"; title = "Datos"; ObjectID = "XyU-fS-dUg"; */
+"XyU-fS-dUg.title" = "Datos";
+
+/* Class = "UILabel"; text = "Medio"; ObjectID = "YV4-rK-zeb"; */
+"YV4-rK-zeb.text" = "Medio";
+
+/* Class = "UITabBarItem"; title = "R. Non-Functional"; ObjectID = "YdX-HN-C3s"; */
+"YdX-HN-C3s.title" = "R. No Funcionales";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "ZBn-2j-NhM"; */
+"ZBn-2j-NhM.text" = "100";
+
+/* Class = "UITextField"; placeholder = "Database"; ObjectID = "ZFP-kR-7Z3"; */
+"ZFP-kR-7Z3.placeholder" = "Base de datos";
+
+/* Class = "UITabBarItem"; title = "Autores"; ObjectID = "ZX0-jL-S2N"; */
+"ZX0-jL-S2N.title" = "Autores";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "ZmP-Nw-UAX"; */
+"ZmP-Nw-UAX.text" = "Estado";
+
+/* Class = "UITextField"; placeholder = "Descripción"; ObjectID = "aNS-Dq-bCH"; */
+"aNS-Dq-bCH.placeholder" = "Descripción";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "aZU-Qu-TzM"; */
+"aZU-Qu-TzM.title" = "Eliminar";
+
+/* Class = "UITabBarItem"; title = "Group"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Grupo";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "bHe-dz-7Xg"; */
+"bHe-dz-7Xg.placeholder" = "Nombre";
+
+/* Class = "UITabBarItem"; title = "Datos E."; ObjectID = "cIk-Tr-9Lt"; */
+"cIk-Tr-9Lt.title" = "Datos E.";
+
+/* Class = "UITextField"; placeholder = "Descripción"; ObjectID = "cJc-hy-6CP"; */
+"cJc-hy-6CP.placeholder" = "Descripción";
+
+/* Class = "UITabBarItem"; title = "Packages"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Paquetes";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "cZ9-VK-aKi"; */
+"cZ9-VK-aKi.title" = "Eliminar";
+
+/* Class = "UILabel"; text = "Máximo"; ObjectID = "csN-mK-bPc"; */
+"csN-mK-bPc.text" = "Máximo";
+
+/* Class = "UILabel"; text = "Prioridad"; ObjectID = "ctS-J2-3aU"; */
+"ctS-J2-3aU.text" = "Prioridad";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "dA8-gP-wCB"; */
+"dA8-gP-wCB.title" = "Eliminar";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "dha-86-ud5"; */
+"dha-86-ud5.text" = "100";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "eDI-I7-d0S"; */
+"eDI-I7-d0S.normalTitle" = "X";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "eOk-yS-q5P"; */
+"eOk-yS-q5P.title" = "Eliminar";
+
+/* Class = "UITabBarItem"; title = "Fuentes"; ObjectID = "f6h-ew-mIP"; */
+"f6h-ew-mIP.title" = "Fuentes";
+
+/* Class = "UILabel"; text = "Prioridad"; ObjectID = "fE3-Q8-4BI"; */
+"fE3-Q8-4BI.text" = "Prioridad";
+
+/* Class = "UITabBarItem"; title = "Datos"; ObjectID = "fSs-3z-8Hp"; */
+"fSs-3z-8Hp.title" = "Datos";
+
+/* Class = "UITabBarItem"; title = "Requisitos"; ObjectID = "faF-Q0-SXS"; */
+"faF-Q0-SXS.title" = "Requisitos";
+
+/* Class = "UITabBarItem"; title = "Autores"; ObjectID = "g37-Fb-FmP"; */
+"g37-Fb-FmP.title" = "Autores";
+
+/* Class = "UILabel"; text = "Estabilidad"; ObjectID = "ges-Y9-luO"; */
+"ges-Y9-luO.text" = "Estabilidad";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "hXN-kS-RQb"; */
+"hXN-kS-RQb.text" = "100";
+
+/* Class = "UITextField"; placeholder = "Precondición"; ObjectID = "hdH-pz-HUX"; */
+"hdH-pz-HUX.placeholder" = "Precondición";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "hfr-Df-XwI"; */
+"hfr-Df-XwI.placeholder" = "Buscar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "ifP-uh-KDP"; */
+"ifP-uh-KDP.placeholder" = "Buscar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "irF-M9-0YJ"; */
+"irF-M9-0YJ.placeholder" = "Buscar";
+
+/* Class = "UILabel"; text = "Urgencia"; ObjectID = "jAp-CD-p5e"; */
+"jAp-CD-p5e.text" = "Urgencia";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "jFp-FD-RpN"; */
+"jFp-FD-RpN.title" = "Eliminar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "l3r-L7-IgN"; */
+"l3r-L7-IgN.placeholder" = "Buscar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "lLh-Tg-vnh"; */
+"lLh-Tg-vnh.placeholder" = "Buscar";
+
+/* Class = "UITabBarItem"; title = "Requisitos"; ObjectID = "lkR-wT-0bL"; */
+"lkR-wT-0bL.title" = "Requisitos";
+
+/* Class = "UIBarButtonItem"; title = "Order"; ObjectID = "m9E-4q-ZS8"; */
+"m9E-4q-ZS8.title" = "Ordenar";
+
+/* Class = "UIBarButtonItem"; title = "Order"; ObjectID = "mO6-ot-dtr"; */
+"mO6-ot-dtr.title" = "Ordenar";
+
+/* Class = "UITextField"; placeholder = "Rol"; ObjectID = "mQC-pA-Avw"; */
+"mQC-pA-Avw.placeholder" = "Rol";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "mWu-Dn-Xoh"; */
+"mWu-Dn-Xoh.title" = "Eliminar";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "mau-Ek-cbO"; */
+"mau-Ek-cbO.title" = "Eliminar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "nYa-Of-zOz"; */
+"nYa-Of-zOz.placeholder" = "Buscar";
+
+/* Class = "UIButton"; normalTitle = "Connect and Save"; ObjectID = "nc1-vr-u8l"; */
+"nc1-vr-u8l.normalTitle" = "Conectar y Guardar";
+
+/* Class = "UITabBarItem"; title = "S. Exc"; ObjectID = "nm6-kx-b6M"; */
+"nm6-kx-b6M.title" = "S. Exc";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "noV-fo-Jg7"; */
+"noV-fo-Jg7.title" = "Eliminar";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "nwe-6F-51l"; */
+"nwe-6F-51l.placeholder" = "Nombre";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "od9-Nk-cnJ"; */
+"od9-Nk-cnJ.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "Tiempo de Vida"; ObjectID = "pwb-tI-VGl"; */
+"pwb-tI-VGl.text" = "Tiempo de Vida";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "r0n-SX-Qm1"; */
+"r0n-SX-Qm1.placeholder" = "Buscar";
+
+/* Class = "UILabel"; text = "Paquete"; ObjectID = "s38-ea-sjF"; */
+"s38-ea-sjF.text" = "Paquete";
+
+/* Class = "UITextField"; placeholder = "Postcondición"; ObjectID = "sbA-LC-e67"; */
+"sbA-LC-e67.placeholder" = "Postcondición";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "uIv-em-zRV"; */
+"uIv-em-zRV.placeholder" = "Buscar";
+
+/* Class = "UITabBarItem"; title = "Fuentes"; ObjectID = "uaO-ce-yWA"; */
+"uaO-ce-yWA.title" = "Fuentes";
+
+/* Class = "UILabel"; text = "Prioridad"; ObjectID = "udg-hX-SVs"; */
+"udg-hX-SVs.text" = "Prioridad";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "ugc-50-V7Z"; */
+"ugc-50-V7Z.title" = "Eliminar";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "vz2-mf-Bnw"; */
+"vz2-mf-Bnw.title" = "Eliminar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "w9k-do-5b4"; */
+"w9k-do-5b4.placeholder" = "Buscar";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "wQj-GV-bYW"; */
+"wQj-GV-bYW.placeholder" = "Buscar";
+
+/* Class = "UILabel"; text = "Estabilidad"; ObjectID = "wgf-bH-kH1"; */
+"wgf-bH-kH1.text" = "Estabilidad";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "wlW-Ch-lua"; */
+"wlW-Ch-lua.placeholder" = "Buscar";
+
+/* Class = "UILabel"; text = "Ocurrencias"; ObjectID = "x3u-7q-Bvm"; */
+"x3u-7q-Bvm.text" = "Ocurrencias";
+
+/* Class = "UIBarButtonItem"; title = "Eliminar"; ObjectID = "xlA-ER-uXb"; */
+"xlA-ER-uXb.title" = "Eliminar";
+
+/* Class = "UITabBarItem"; title = "Autores"; ObjectID = "yA4-bg-uNW"; */
+"yA4-bg-uNW.title" = "Autores";
+
+/* Class = "UITextField"; placeholder = "Descripción"; ObjectID = "zFZ-bZ-Swc"; */
+"zFZ-bZ-Swc.placeholder" = "Descripción";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "zKf-nj-cdN"; */
+"zKf-nj-cdN.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "Medio"; ObjectID = "zSi-PV-vMx"; */
+"zSi-PV-vMx.text" = "Medio";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "zcK-qI-nAf"; */
+"zcK-qI-nAf.placeholder" = "Nombre";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "zkj-su-uQu"; */
+"zkj-su-uQu.placeholder" = "Buscar";

@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  ReadyReq
+
+  Created by Arturo Balleros Albillo on 26/11/2018.
+  Copyright © 2018 Arturo Balleros Albillo. All rights reserved.
+*/
+
+"TXT_EMPTY" = "Rellene el campo para continuar";
+
+"ERROR_URL" = "Error al convertir URL";
+"ERROR_EMPTY_PARAM" = "Existen parámetros vacios";
+"ERROR_EMPTY_QUERY" = "La consulta esta vacía";
+"ERROR_QUERY" = "Error con la consulta";
+"ERROR_READ_FILE" = "No se pudo leer el fichero";
+"ERROR_CONNECT" = "No se ha podido conectar al servidor";
+"CONF_FRAG_ERROR_1" = "No se pudo escribir el fichero";
+"SUCCESS" = "Correcto";
+
+"VLOW" = "Muy Baja";
+"LOW" = "Baja";
+"MED" = "Media";
+"HIGH" = "Alta";
+"VHIGH" = "Muy Alta";
+
+"ORDER" = "Ordenar";
+"SELECT" = "Seleccionar";
+"REF" = "Recargando";
