@@ -21,7 +21,7 @@ class GroupListController: UIViewController, UITableViewDelegate, UITableViewDat
     var returnSegue = false
     var items: NSMutableArray = NSMutableArray()
     let itemsSearch: NSMutableArray = NSMutableArray()
-    let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/group_frag_list.php"
+    let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_frag_list.php"
     let generic = Generic()
     
     // MARK: - View

@@ -38,7 +38,7 @@ class DataActorController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         self.pickerCateg.delegate = self
         if(myTabBar.idActor != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/actor_search.php?a=\(myTabBar.idActor)"
+            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_search.php?a=\(myTabBar.idActor)"
             actor.getActor(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }else{
             myTabBar.actor = self.actor

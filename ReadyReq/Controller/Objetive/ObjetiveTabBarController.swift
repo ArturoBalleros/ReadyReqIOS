@@ -26,7 +26,7 @@ class ObjetiveTabBarController: UITabBarController, CUDProtocol, IdProtocol, Sav
     // MARK: - Buttons
     
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
-        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/objet_"
+        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_"
         if(idObjetive != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(objetive.id)&b=\(objetive.name)&c=\(objetive.descrip)&d=\(objetive.prior)&"
             urlPath += "e=\(objetive.urge)&f=\(objetive.esta)&"
@@ -55,7 +55,7 @@ class ObjetiveTabBarController: UITabBarController, CUDProtocol, IdProtocol, Sav
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idObjetive != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/objet_delete.php?a=\(objetive.id)"
+            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_delete.php?a=\(objetive.id)"
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
@@ -71,7 +71,7 @@ class ObjetiveTabBarController: UITabBarController, CUDProtocol, IdProtocol, Sav
         Utils.showError(codeError: codeError, controller: self)
         ToolsView.hideActivityIndicator(activityIndicator: activityIndicator)
         if (idObjetive == AppDelegate.NOTHING){
-            var urlPath = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/objet_id.php?a=\(objetive.name)"
+            var urlPath = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_id.php?a=\(objetive.name)"
             urlPath = Utils.convert_Url(url: urlPath)
             if(!urlPath.elementsEqual("ERROR")){
                 activityIndicator = ToolsView.beginActivityIndicator(view: self.view)

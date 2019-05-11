@@ -51,7 +51,7 @@ class DataReqInfoController: UIViewController, UIPickerViewDelegate, UIPickerVie
         self.pickerCateg.delegate = self
         if(myTabBar.idReqInfo != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/reqinfo_search.php?a=\(myTabBar.idReqInfo)"
+            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqinfo_search.php?a=\(myTabBar.idReqInfo)"
             reqinfo.getReqInfo(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }else{
             myTabBar.reqinfo = self.reqinfo

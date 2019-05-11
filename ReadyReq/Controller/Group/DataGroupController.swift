@@ -33,7 +33,7 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         if(idWorker != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/group_search.php?a=\(idWorker)"
+            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_search.php?a=\(idWorker)"
             worker.getWorker(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }
     }
@@ -68,7 +68,7 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idWorker != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/group_delete.php?a=\(worker.id)"
+            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_delete.php?a=\(worker.id)"
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
@@ -117,7 +117,7 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     // MARK: - Methods
     
     func saveWorker(){
-        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/group_"
+        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_"
         if(idWorker != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(worker.id)&b=\(worker.name)&c=\(worker.organization)&d=\(worker.role)&"
             if(worker.developer){ urlPath += "e=\(1)&" }else{ urlPath += "e=\(0)&" }

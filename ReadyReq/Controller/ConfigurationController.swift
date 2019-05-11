@@ -18,6 +18,7 @@ class ConfigurationController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtDatabase: UITextField!
     @IBOutlet weak var txtPort: UITextField!
+    @IBOutlet weak var txtPortHttp: UITextField!
     var activityIndicator : NVActivityIndicatorView!
     
     // MARK: - View
@@ -65,15 +66,17 @@ class ConfigurationController: UIViewController, UITextFieldDelegate {
             let user = self.txtUser.text,
             let pass = self.txtPassword.text,
             let database = self.txtDatabase.text,
-            let port = self.txtPort.text {
+            let port = self.txtPort.text,
+            let portHTTP = self.txtPortHttp.text {
             
             MyUserDefaults.writeUDServerIp(serverIP: serverIP)
             MyUserDefaults.writeUDUser(user: user)
             MyUserDefaults.writeUDPass(pass: pass)
             MyUserDefaults.writeUDDatabase(database: database)
             MyUserDefaults.writeUDPort(port: Int(port)!)
+            MyUserDefaults.writeUDPortHTTP(portHTTP: Int(portHTTP)!)
             
-            var urlPath: String = "http://" + serverIP + ":8080/readyreq/conf_frag_connection_mac.php?"
+            var urlPath: String = "http://" + serverIP + ":" + portHTTP + "/readyreq/conf_frag_connection_mac.php?"
             urlPath += "a=" + serverIP + "&"
             urlPath += "b=" + user + "&"
             urlPath += "c=" + encriptarPass(pass: pass) + "&"

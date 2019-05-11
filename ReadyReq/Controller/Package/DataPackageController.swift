@@ -29,7 +29,7 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
         self.pickerCateg.delegate = self
         if(idPackage != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/paq_search.php?a=\(idPackage)"
+            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_search.php?a=\(idPackage)"
             package.getPackage(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }
     }
@@ -63,7 +63,7 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idPackage != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/paq_delete.php?a=\(package.id)"
+            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_delete.php?a=\(package.id)"
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
@@ -98,7 +98,7 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
     // MARK: - Methods
     
     func savePackage(){
-        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/paq_"
+        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_"
         if(idPackage != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(package.id)&b=\(package.name)&c=\(package.category)&d=\(package.comentary)"
         }else{

@@ -22,7 +22,7 @@ class AddItemsController: UIViewController,  UITableViewDelegate, UITableViewDat
     var searching = false
     var items: NSMutableArray = NSMutableArray()
     let itemsSearch: NSMutableArray = NSMutableArray()
-    var urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/rel_list.php?"
+    var urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/rel_list.php?"
     let generic = Generic()
     
     // MARK: - View

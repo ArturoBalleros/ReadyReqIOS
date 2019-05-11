@@ -43,7 +43,7 @@ class DataObjetiveController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.pickerCateg.delegate = self
         if(myTabBar.idObjetive != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/objet_search.php?a=\(myTabBar.idObjetive)"
+            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_search.php?a=\(myTabBar.idObjetive)"
             objetive.getObjetive(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }else{
             myTabBar.objetive = self.objetive

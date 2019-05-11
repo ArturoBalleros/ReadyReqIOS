@@ -37,6 +37,11 @@ class MyUserDefaults{
         userD.set(port , forKey: "port")
     }
     
+    public static func writeUDPortHTTP(portHTTP: Int) {
+        let userD = UserDefaults.standard
+        userD.set(portHTTP , forKey: "portHTTP")
+    }
+    
     // MARK: - Read
     
     public static func readUDServerIp() -> String {
@@ -81,7 +86,17 @@ class MyUserDefaults{
         if port != 0{
             return port
         }else{
-            return -1
+            return 3306
+        }
+    }
+    
+    public static func readUDPortHTTP() -> Int {
+        let userD = UserDefaults.standard
+        let portHTTP = userD.integer(forKey: "portHTTP")
+        if portHTTP != 0{
+            return portHTTP
+        }else{
+            return 8080
         }
     }
     

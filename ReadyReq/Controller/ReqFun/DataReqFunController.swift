@@ -49,7 +49,7 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.pickerComple.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
-        let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/paq_frag_list.php"
+        let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_frag_list.php"
         let generic = Generic()
         generic.delegate = self
         activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
@@ -98,7 +98,7 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
         ToolsView.hideActivityIndicator(activityIndicator: activityIndicator)
         if(myTabBar.idReqFun != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/reqfun_search.php?a=\(myTabBar.idReqFun)"
+            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqfun_search.php?a=\(myTabBar.idReqFun)"
             reqfun.getReqFun(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }else{
             myTabBar.reqfun = self.reqfun

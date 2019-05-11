@@ -26,7 +26,7 @@ class ReqInfoTabBarController: UITabBarController, CUDProtocol, IdProtocol, Save
     // MARK: - Buttons
     
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
-        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/reqinfo_"
+        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqinfo_"
         if(idReqInfo != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(reqinfo.id)&b=\(reqinfo.name)&c=\(reqinfo.descrip)&d=\(reqinfo.timeMed)&"
             urlPath += "e=\(reqinfo.timeMax)&f=\(reqinfo.ocuMed)&g=\(reqinfo.ocuMax)&h=\(reqinfo.prior)&"
@@ -58,7 +58,7 @@ class ReqInfoTabBarController: UITabBarController, CUDProtocol, IdProtocol, Save
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idReqInfo != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/reqinfo_delete.php?a=\(reqinfo.id)"
+            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqinfo_delete.php?a=\(reqinfo.id)"
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
@@ -74,7 +74,7 @@ class ReqInfoTabBarController: UITabBarController, CUDProtocol, IdProtocol, Save
         Utils.showError(codeError: codeError, controller: self)
         ToolsView.hideActivityIndicator(activityIndicator: activityIndicator)
         if (idReqInfo == AppDelegate.NOTHING){
-            var urlPath = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/reqinfo_id.php?a=\(reqinfo.name)"
+            var urlPath = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqinfo_id.php?a=\(reqinfo.name)"
             urlPath = Utils.convert_Url(url: urlPath)
             if(!urlPath.elementsEqual("ERROR")){
                 activityIndicator = ToolsView.beginActivityIndicator(view: self.view)

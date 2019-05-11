@@ -1998,7 +1998,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wcg-LJ-jYI">
-                                <rect key="frame" x="5" y="292.66666666666669" width="404" height="311.00000000000006"/>
+                                <rect key="frame" x="5" y="265" width="404" height="366"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ip Server" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Knp-x3-3x4">
                                         <rect key="frame" x="5" y="0.0" width="394" height="40"/>
@@ -2037,7 +2037,7 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3306" borderStyle="roundedRect" placeholder="Port" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Msv-eX-z0J">
-                                        <rect key="frame" x="5" y="219.99999999999994" width="394" height="40"/>
+                                        <rect key="frame" x="5" y="220" width="394" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="SzH-UW-DlP"/>
                                         </constraints>
@@ -2045,8 +2045,17 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8080" borderStyle="roundedRect" placeholder="PortHttp" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gzs-b1-el5">
+                                        <rect key="frame" x="5" y="275" width="394" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="blz-k8-uga"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="done"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nc1-vr-u8l">
-                                        <rect key="frame" x="122.66666666666669" y="274.99999999999994" width="159" height="36"/>
+                                        <rect key="frame" x="122.66666666666669" y="330" width="159" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Connect and Save"/>
                                         <connections>
@@ -2056,6 +2065,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="BdH-jv-fsU" firstAttribute="height" secondItem="Knp-x3-3x4" secondAttribute="height" id="2rS-cZ-1hZ"/>
+                                    <constraint firstItem="Gzs-b1-el5" firstAttribute="width" secondItem="Msv-eX-z0J" secondAttribute="width" id="3ja-BY-6F2"/>
                                     <constraint firstItem="K0i-M9-roW" firstAttribute="height" secondItem="Knp-x3-3x4" secondAttribute="height" id="Eak-Du-s1w"/>
                                     <constraint firstItem="Msv-eX-z0J" firstAttribute="leading" secondItem="wcg-LJ-jYI" secondAttribute="leading" constant="5" id="Gvm-6P-eSm"/>
                                     <constraint firstAttribute="trailing" secondItem="Knp-x3-3x4" secondAttribute="trailing" constant="5" id="HSl-FC-fpN"/>
@@ -2068,6 +2078,7 @@
                                     <constraint firstAttribute="trailing" secondItem="BdH-jv-fsU" secondAttribute="trailing" constant="5" id="j88-mN-URY"/>
                                     <constraint firstItem="BdH-jv-fsU" firstAttribute="leading" secondItem="wcg-LJ-jYI" secondAttribute="leading" constant="5" id="jJ0-u9-Re6"/>
                                     <constraint firstAttribute="trailing" secondItem="ZFP-kR-7Z3" secondAttribute="trailing" constant="5" id="tH0-gp-2wY"/>
+                                    <constraint firstItem="Gzs-b1-el5" firstAttribute="height" secondItem="Msv-eX-z0J" secondAttribute="height" id="yex-oD-wjg"/>
                                     <constraint firstAttribute="trailing" secondItem="K0i-M9-roW" secondAttribute="trailing" constant="5" id="yjb-f7-BH8"/>
                                 </constraints>
                             </stackView>
@@ -2087,6 +2098,7 @@
                         <outlet property="txtIPServer" destination="Knp-x3-3x4" id="mRf-P4-8Pe"/>
                         <outlet property="txtPassword" destination="K0i-M9-roW" id="KuN-0D-xYd"/>
                         <outlet property="txtPort" destination="Msv-eX-z0J" id="2bm-UI-Ptw"/>
+                        <outlet property="txtPortHttp" destination="Gzs-b1-el5" id="TWg-17-sX9"/>
                         <outlet property="txtUser" destination="BdH-jv-fsU" id="KJa-IR-wvO"/>
                     </connections>
                 </viewController>

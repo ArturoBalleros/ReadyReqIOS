@@ -26,7 +26,7 @@ class ActorTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveDe
     // MARK: - Buttons
     
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
-        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/actor_"
+        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_"
         if(idActor != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(actor.id)&b=\(actor.name)&c=\(actor.descrip)&d=\(actor.comple)&"
             urlPath += "e=\(actor.descComple)&f=\(actor.category)&g=\(actor.comentary)"
@@ -51,7 +51,7 @@ class ActorTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveDe
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idActor != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/actor_delete.php?a=\(actor.id)"
+            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_delete.php?a=\(actor.id)"
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
@@ -67,7 +67,7 @@ class ActorTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveDe
         Utils.showError(codeError: codeError, controller: self)
         ToolsView.hideActivityIndicator(activityIndicator: activityIndicator)
         if (idActor == AppDelegate.NOTHING){
-            var urlPath = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/actor_id.php?a=\(actor.name)"
+            var urlPath = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_id.php?a=\(actor.name)"
             urlPath = Utils.convert_Url(url: urlPath)
             if(!urlPath.elementsEqual("ERROR")){
                 activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
