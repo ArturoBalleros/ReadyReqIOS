@@ -69,7 +69,6 @@
 		1F71FA8421B4348F00A4C5B7 /* ReqInfoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqInfoListController.swift; sourceTree = "<group>"; };
 		1F71FA8621B434C600A4C5B7 /* ReqFunListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqFunListController.swift; sourceTree = "<group>"; };
 		1F7B4BE421C712D900CB1AE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		1F7B4BE621C71CE100CB1AE7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		1F7C2ECB21C42E8B00CD9F6A /* DataReqNFunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReqNFunController.swift; sourceTree = "<group>"; };
 		1F7C2ECD21C43A7E00CD9F6A /* RequerimentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequerimentController.swift; sourceTree = "<group>"; };
 		1F7C2ECF21C4639B00CD9F6A /* DataReqInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReqInfoController.swift; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		1F84F24921BB2A4C007348F6 /* DataGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGroupController.swift; sourceTree = "<group>"; };
 		1F9F3C0F21AD4C6900126B6E /* ConfigurationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationController.swift; sourceTree = "<group>"; };
 		1FB1616521C0A05300EFB6FC /* AddItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsController.swift; sourceTree = "<group>"; };
+		1FD1D99D228763DA00D0E84E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		1FD529DE21C4157900FA1C4F /* ReqNFunTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqNFunTabBarController.swift; sourceTree = "<group>"; };
 		1FD529E221C415C700FA1C4F /* ReqFunTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqFunTabBarController.swift; sourceTree = "<group>"; };
 		1FD529E421C415E100FA1C4F /* ReqInfoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqInfoTabBarController.swift; sourceTree = "<group>"; };
@@ -487,7 +487,7 @@
 			children = (
 				1FF2A56A21AC69AB0091DE60 /* Base */,
 				1F7B4BE421C712D900CB1AE7 /* en */,
-				1F7B4BE621C71CE100CB1AE7 /* es */,
+				1FD1D99D228763DA00D0E84E /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

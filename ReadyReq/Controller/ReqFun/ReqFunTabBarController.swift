@@ -29,16 +29,16 @@ class ReqFunTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveD
         var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":8080/readyreq/reqfun_"
         if(idReqFun != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(reqfun.id)&b=\(reqfun.name)&c=\(reqfun.descrip)&d=\(reqfun.package)&"
-            urlPath += "e=\(reqfun.preCond)&f=\(reqfun.postCond)&g=\(reqfun.prior)&"
+            urlPath += "e=\(reqfun.preCond)&f=\(reqfun.postCond)&g=\(reqfun.comple)&h=\(reqfun.prior)&"
+            urlPath += "i=\(reqfun.urge)&j=\(reqfun.esta)&"
+            if(reqfun.state){ urlPath += "k=\(1)&" }else{ urlPath += "k=\(0)&" }
+            urlPath += "l=\(reqfun.category)&m=\(reqfun.comentary)"
+        }else{
+            urlPath += "create.php?a=\(reqfun.name)&b=\(reqfun.descrip)&c=\(reqfun.package)&"
+            urlPath += "d=\(reqfun.preCond)&e=\(reqfun.postCond)&f=\(reqfun.comple)&g=\(reqfun.prior)&"
             urlPath += "h=\(reqfun.urge)&i=\(reqfun.esta)&"
             if(reqfun.state){ urlPath += "j=\(1)&" }else{ urlPath += "j=\(0)&" }
             urlPath += "k=\(reqfun.category)&l=\(reqfun.comentary)"
-        }else{
-            urlPath += "create.php?a=\(reqfun.name)&b=\(reqfun.descrip)&c=\(reqfun.package)&"
-            urlPath += "d=\(reqfun.preCond)&e=\(reqfun.postCond)&f=\(reqfun.prior)&"
-            urlPath += "g=\(reqfun.urge)&h=\(reqfun.esta)&"
-            if(reqfun.state){ urlPath += "i=\(1)&" }else{ urlPath += "i=\(0)&" }
-            urlPath += "j=\(reqfun.category)&k=\(reqfun.comentary)"
         }
         urlPath = Utils.convert_Url(url: urlPath)
         if(!urlPath.elementsEqual("ERROR")){

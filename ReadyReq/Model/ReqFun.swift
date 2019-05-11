@@ -23,6 +23,7 @@ class ReqFun : NSObject {
     var prior : Int
     var urge : Int
     var esta : Int
+    var comple : Int
     var state : Bool
     var category : Int
     var comentary : String
@@ -46,6 +47,7 @@ class ReqFun : NSObject {
         self.prior = 3
         self.urge = 3
         self.esta = 3
+        self.comple = 2
         self.state = false
         self.category = 1
         self.comentary = ""
@@ -66,6 +68,7 @@ class ReqFun : NSObject {
         - Prioridad : \(prior)
         - Urgencia : \(urge)
         - Estabilidad : \(esta)
+        - Complejidad : \(comple)
         - Estado : \(state)
         - Category : \(category)
         - Comentary : \(comentary)
@@ -121,6 +124,7 @@ class ReqFun : NSObject {
                                 let name = element["Nombre"] as? String,
                                 let descrip = element["Descripcion"] as? String,
                                 let estab = element["Estabilidad"] as? String,
+                                let comple = element["Complejidad"] as? String,
                                 let prior = element["Prioridad"] as? String,
                                 let urgen = element["Urgencia"] as? String,
                                 let state = element["Estado"] as? String,
@@ -134,6 +138,7 @@ class ReqFun : NSObject {
                                 reqfun.name = name
                                 reqfun.descrip = descrip
                                 reqfun.esta = Int(estab)!
+                                reqfun.comple = Int(comple)!
                                 reqfun.prior = Int(prior)!
                                 reqfun.urge = Int(urgen)!
                                 if(Int(state) == 0){

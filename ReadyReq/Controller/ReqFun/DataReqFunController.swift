@@ -24,6 +24,7 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var pickerPrior: UIPickerView!
     @IBOutlet weak var pickerUrge: UIPickerView!
     @IBOutlet weak var pickerEstab: UIPickerView!
+    @IBOutlet weak var pickerComple: UIPickerView!
     @IBOutlet weak var switchState: UISwitch!
     @IBOutlet weak var pickerCateg: UIPickerView!
     @IBOutlet weak var txtComen: UITextView!
@@ -44,6 +45,8 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.pickerUrge.delegate = self
         self.pickerEstab.dataSource = self
         self.pickerEstab.delegate = self
+        self.pickerComple.dataSource = self
+        self.pickerComple.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
         let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":8080/readyreq/paq_frag_list.php"
@@ -75,6 +78,7 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
             self.pickerPrior.selectRow((self.reqfun.prior-1), inComponent: 0, animated: false)
             self.pickerUrge.selectRow((self.reqfun.urge-1), inComponent: 0, animated: false)
             self.pickerEstab.selectRow((self.reqfun.esta-1), inComponent: 0, animated: false)
+            self.pickerComple.selectRow((self.reqfun.comple-1), inComponent: 0, animated: false)
             self.switchState.setOn(self.reqfun.state, animated: false)
             self.pickerCateg.selectRow((self.reqfun.category-1), inComponent: 0, animated: false)
             txtComen.text = self.reqfun.comentary
@@ -102,6 +106,7 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
             self.pickerPrior.selectRow((self.reqfun.prior-1), inComponent: 0, animated: false)
             self.pickerUrge.selectRow((self.reqfun.urge-1), inComponent: 0, animated: false)
             self.pickerEstab.selectRow((self.reqfun.esta-1), inComponent: 0, animated: false)
+            self.pickerComple.selectRow((self.reqfun.comple-1), inComponent: 0, animated: false)
             self.switchState.setOn(self.reqfun.state, animated: false)
         }
     }
@@ -114,21 +119,25 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
-        if(pickerView.tag != 0 && pickerView.tag != 4){
+        if(pickerView.tag != 0 && pickerView.tag != 4 && pickerView.tag != 5){
             return AppDelegate.RANGE_VALUES.count
         }else if pickerView.tag == 4{
             return items.count
+        }else if pickerView.tag == 5{
+            return AppDelegate.COMPLEXITY.count
         }else{
             return AppDelegate.CATEGORY.count
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if(pickerView.tag != 0 && pickerView.tag != 4){
+        if(pickerView.tag != 0 && pickerView.tag != 4 && pickerView.tag != 5){
             return AppDelegate.RANGE_VALUES[row+1]
         }else if pickerView.tag == 4{
             let pack = (items[row] as! Generic).name
             return pack
+        }else if pickerView.tag == 5{
+           return AppDelegate.COMPLEXITY[row+1]
         }else{
             return String(AppDelegate.CATEGORY[row])
         }
@@ -158,6 +167,13 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
             }
         } else if(pickerView.tag == 4) {
             reqfun.package = (items[row] as! Generic).id
+        } else if(pickerView.tag == 5){
+            for i in 1...AppDelegate.COMPLEXITY.count{
+                if(AppDelegate.COMPLEXITY[row+1]!.elementsEqual(AppDelegate.COMPLEXITY[i]!)){
+                    reqfun.comple = i
+                    break
+                }
+            }
         } else {
             reqfun.category = AppDelegate.CATEGORY[row]
         }
