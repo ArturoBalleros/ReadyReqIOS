@@ -117,7 +117,7 @@ class ConfigurationController: UIViewController, UITextFieldDelegate {
             txtPort.text = port
         }
         if(!portHTTP.elementsEqual("0")){
-            txtPortHttp.text = port
+            txtPortHttp.text = portHTTP
         }
     }
     

@@ -68,7 +68,6 @@
 		1F71FA8221B4341C00A4C5B7 /* ReqNFunListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqNFunListController.swift; sourceTree = "<group>"; };
 		1F71FA8421B4348F00A4C5B7 /* ReqInfoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqInfoListController.swift; sourceTree = "<group>"; };
 		1F71FA8621B434C600A4C5B7 /* ReqFunListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqFunListController.swift; sourceTree = "<group>"; };
-		1F7B4BE421C712D900CB1AE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1F7C2ECB21C42E8B00CD9F6A /* DataReqNFunController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReqNFunController.swift; sourceTree = "<group>"; };
 		1F7C2ECD21C43A7E00CD9F6A /* RequerimentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequerimentController.swift; sourceTree = "<group>"; };
 		1F7C2ECF21C4639B00CD9F6A /* DataReqInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReqInfoController.swift; sourceTree = "<group>"; };
@@ -78,7 +77,6 @@
 		1F84F24921BB2A4C007348F6 /* DataGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGroupController.swift; sourceTree = "<group>"; };
 		1F9F3C0F21AD4C6900126B6E /* ConfigurationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationController.swift; sourceTree = "<group>"; };
 		1FB1616521C0A05300EFB6FC /* AddItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsController.swift; sourceTree = "<group>"; };
-		1FD1D99D228763DA00D0E84E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		1FD529DE21C4157900FA1C4F /* ReqNFunTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqNFunTabBarController.swift; sourceTree = "<group>"; };
 		1FD529E221C415C700FA1C4F /* ReqFunTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqFunTabBarController.swift; sourceTree = "<group>"; };
 		1FD529E421C415E100FA1C4F /* ReqInfoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqInfoTabBarController.swift; sourceTree = "<group>"; };
@@ -93,6 +91,8 @@
 		1FE2EDC321BF48DF001867AF /* ReqInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqInfo.swift; sourceTree = "<group>"; };
 		1FE2EDC521BF48EF001867AF /* ReqNFun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqNFun.swift; sourceTree = "<group>"; };
 		1FE3BB4021BC8E430058F838 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		1FE4470F228864A500E0D41E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		1FE44711228864AE00E0D41E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1FE749B521BDD53500A98687 /* DataPackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageController.swift; sourceTree = "<group>"; };
 		1FE8D5C821B34E8800596929 /* MyUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserDefaults.swift; sourceTree = "<group>"; };
 		1FF2A56021AC69AB0091DE60 /* ReadyReq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadyReq.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -486,8 +486,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1FF2A56A21AC69AB0091DE60 /* Base */,
-				1F7B4BE421C712D900CB1AE7 /* en */,
-				1FD1D99D228763DA00D0E84E /* es */,
+				1FE4470F228864A500E0D41E /* es */,
+				1FE44711228864AE00E0D41E /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
