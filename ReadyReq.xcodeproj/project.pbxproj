@@ -23,7 +23,6 @@
 		1F7C2ED021C4639B00CD9F6A /* DataReqInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C2ECF21C4639B00CD9F6A /* DataReqInfoController.swift */; };
 		1F7C2ED221C486D200CD9F6A /* DatEspController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C2ED121C486D200CD9F6A /* DatEspController.swift */; };
 		1F8029A621ACA3580033E33D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F8029A821ACA3580033E33D /* Localizable.strings */; };
-		1F843890228785F80083FDFF /* EstimateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84388F228785F80083FDFF /* EstimateController.swift */; };
 		1F84F24A21BB2A4C007348F6 /* DataGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84F24921BB2A4C007348F6 /* DataGroupController.swift */; };
 		1F9F3C1021AD4C6900126B6E /* ConfigurationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F3C0F21AD4C6900126B6E /* ConfigurationController.swift */; };
 		1FB1616621C0A05300EFB6FC /* AddItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1616521C0A05300EFB6FC /* AddItemsController.swift */; };
@@ -76,7 +75,6 @@
 		1F7C2ED121C486D200CD9F6A /* DatEspController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatEspController.swift; sourceTree = "<group>"; };
 		1F8029A721ACA3580033E33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1F8029AB21ACA3810033E33D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1F84388F228785F80083FDFF /* EstimateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateController.swift; sourceTree = "<group>"; };
 		1F84F24921BB2A4C007348F6 /* DataGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGroupController.swift; sourceTree = "<group>"; };
 		1F9F3C0F21AD4C6900126B6E /* ConfigurationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationController.swift; sourceTree = "<group>"; };
 		1FB1616521C0A05300EFB6FC /* AddItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsController.swift; sourceTree = "<group>"; };
@@ -261,7 +259,6 @@
 				1FD529E121C4159100FA1C4F /* ReqFun */,
 				1F7C2ECA21C42D1C00CD9F6A /* AuxClasses */,
 				1F9F3C0F21AD4C6900126B6E /* ConfigurationController.swift */,
-				1F84388F228785F80083FDFF /* EstimateController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -461,7 +458,6 @@
 				1F7C2ECC21C42E8B00CD9F6A /* DataReqNFunController.swift in Sources */,
 				1FE2ED9821BF04B6001867AF /* DataActorController.swift in Sources */,
 				1FF6643221C5799700E9DC82 /* SecExcController.swift in Sources */,
-				1F843890228785F80083FDFF /* EstimateController.swift in Sources */,
 				1FD529DF21C4157900FA1C4F /* ReqNFunTabBarController.swift in Sources */,
 				1F7C2ECE21C43A7E00CD9F6A /* RequerimentController.swift in Sources */,
 				1F16816721C15E21005B1B38 /* DataObjetiveController.swift in Sources */,

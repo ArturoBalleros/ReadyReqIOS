@@ -99,6 +99,7 @@ class ConfigurationController: UIViewController, UITextFieldDelegate {
         let pass = MyUserDefaults.readUDPass()
         let database = MyUserDefaults.readUDDatabase()
         let port = String(MyUserDefaults.readUDPort())
+        let portHTTP = String(MyUserDefaults.readUDPortHTTP())
         
         if(!serverIp.elementsEqual("No")){
             txtIPServer.text = serverIp
@@ -112,8 +113,11 @@ class ConfigurationController: UIViewController, UITextFieldDelegate {
         if(!database.elementsEqual("No")){
             txtDatabase.text = database
         }
-        if(!database.elementsEqual("0")){
+        if(!port.elementsEqual("0")){
             txtPort.text = port
+        }
+        if(!portHTTP.elementsEqual("0")){
+            txtPortHttp.text = port
         }
     }
     

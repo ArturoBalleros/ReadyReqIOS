@@ -2106,33 +2106,6 @@
             </objects>
             <point key="canvasLocation" x="917" y="-1945"/>
         </scene>
-        <!--Estimaciones-->
-        <scene sceneID="iLr-Iy-1lB">
-            <objects>
-                <viewController id="z4X-WA-ggT" customClass="EstimateController" customModule="ReadyReq" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mGn-so-QHY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zt-0r-bRQ">
-                                <rect key="frame" x="10" y="54" width="394" height="842"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="9Zt-0r-bRQ" firstAttribute="leading" secondItem="ktg-Ui-yXy" secondAttribute="leading" constant="10" id="5zc-2e-kWc"/>
-                            <constraint firstItem="ktg-Ui-yXy" firstAttribute="trailing" secondItem="9Zt-0r-bRQ" secondAttribute="trailing" constant="10" id="IIf-wS-mlL"/>
-                            <constraint firstAttribute="bottom" secondItem="9Zt-0r-bRQ" secondAttribute="bottom" id="m60-C7-8bz"/>
-                            <constraint firstItem="9Zt-0r-bRQ" firstAttribute="top" secondItem="ktg-Ui-yXy" secondAttribute="top" constant="10" id="w32-az-qYW"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ktg-Ui-yXy"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Estimaciones" image="conf" id="DZl-OC-S9a"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rq2-Se-TzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1721.7391304347827" y="-1945.3125"/>
-        </scene>
         <!--Objetives-->
         <scene sceneID="B4g-GQ-1gO">
             <objects>
@@ -5007,7 +4980,6 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="z4X-WA-ggT" kind="relationship" relationship="viewControllers" id="oXS-Yb-CTn"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="rDx-7b-nDF" kind="relationship" relationship="viewControllers" id="6NA-wa-oCs"/>
