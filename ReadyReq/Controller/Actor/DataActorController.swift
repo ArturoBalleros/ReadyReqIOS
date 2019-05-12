@@ -42,7 +42,7 @@ class DataActorController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             actor.getActor(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }else{
             myTabBar.actor = self.actor
-              self.pickerComple.selectRow((self.actor.comple-1), inComponent: 0, animated: false)
+            self.pickerComple.selectRow((self.actor.comple-1), inComponent: 0, animated: false)
         }
     }
     
@@ -94,7 +94,7 @@ class DataActorController: UIViewController, UIPickerViewDelegate, UIPickerViewD
                 }
             }
         }else{
-           actor.category = AppDelegate.CATEGORY[row]
+            actor.category = AppDelegate.CATEGORY[row]
         }
     }
     
