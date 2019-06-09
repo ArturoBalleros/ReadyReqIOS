@@ -25,18 +25,20 @@ class ObjetiveTabBarController: UITabBarController, CUDProtocol, IdProtocol, Sav
     
     // MARK: - Buttons
     
-    @IBAction func savePressed(_ sender: UIBarButtonItem) {
+    @IBAction func savePressed(_ sender: UIBarButtonItem) {        
         var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_"
         if(idObjetive != AppDelegate.NOTHING){
-            urlPath += "update.php?a=\(objetive.id)&b=\(objetive.name)&c=\(objetive.descrip)&d=\(objetive.prior)&"
-            urlPath += "e=\(objetive.urge)&f=\(objetive.esta)&"
-            if(objetive.state){ urlPath += "g=\(1)&" }else{ urlPath += "g=\(0)&" }
-            urlPath += "h=\(objetive.category)&i=\(objetive.comentary)"
+            urlPath += "update.php?a=\(objetive.id)&b=\(objetive.name)&c=\(objetive.version)&d=\(Utils.DateToString(date: objetive.date))&"
+             urlPath += "e=\(objetive.descrip)&f=\(objetive.prior)&"
+            urlPath += "g=\(objetive.urge)&h=\(objetive.esta)&"
+            if(objetive.state){ urlPath += "i=\(1)&" }else{ urlPath += "i=\(0)&" }
+            urlPath += "j=\(objetive.category)&k=\(objetive.comentary)"
         }else{
-            urlPath += "create.php?a=\(objetive.name)&b=\(objetive.descrip)&c=\(objetive.prior)&"
-            urlPath += "d=\(objetive.urge)&e=\(objetive.esta)&"
-            if(objetive.state){ urlPath += "f=\(1)&" }else{ urlPath += "f=\(0)&" }
-            urlPath += "g=\(objetive.category)&h=\(objetive.comentary)"
+            urlPath += "create.php?a=\(objetive.name)&b=\(objetive.version)&c=\(Utils.DateToString(date: objetive.date))&"
+               urlPath += "d=\(objetive.descrip)&e=\(objetive.prior)&"
+            urlPath += "f=\(objetive.urge)&g=\(objetive.esta)&"
+            if(objetive.state){ urlPath += "h=\(1)&" }else{ urlPath += "h=\(0)&" }
+            urlPath += "i=\(objetive.category)&j=\(objetive.comentary)"
         }
         urlPath = Utils.convert_Url(url: urlPath)
         if(!urlPath.elementsEqual("ERROR")){
@@ -55,11 +57,19 @@ class ObjetiveTabBarController: UITabBarController, CUDProtocol, IdProtocol, Sav
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idObjetive != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_delete.php?a=\(objetive.id)"
-            activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
+            let controller = UIAlertController(title: NSLocalizedString("DELETE", comment: ""), message:NSLocalizedString("WANT_DELETE", comment: "")
+                , preferredStyle: UIAlertController.Style.alert)
+            let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
+            
+                let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_delete.php?a=\(self.objetive.id)"
+                self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
-            webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
+                webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: self.activityIndicator)
+            }
+            controller.addAction(action)
+            controller.addAction(UIAlertAction(title: NSLocalizedString("CANCEL", comment: ""), style: .cancel, handler: nil))
+            self.present(controller, animated: true)
         }else{
             self.dismiss(animated: true)
         }

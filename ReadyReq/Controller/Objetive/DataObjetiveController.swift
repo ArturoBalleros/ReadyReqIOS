@@ -24,6 +24,8 @@ class DataObjetiveController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var switchState: UISwitch!
     @IBOutlet weak var pickerCateg: UIPickerView!
     @IBOutlet weak var txtComen: UITextView!
+    @IBOutlet weak var txtVer: UITextField!
+    @IBOutlet weak var picketDate: UIDatePicker!
     var activityIndicator : NVActivityIndicatorView!
     var objetive = Objetive()
     
@@ -41,6 +43,7 @@ class DataObjetiveController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.pickerEstab.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
+            self.picketDate.datePickerMode = .date
         if(myTabBar.idObjetive != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_search.php?a=\(myTabBar.idObjetive)"
@@ -61,6 +64,8 @@ class DataObjetiveController: UIViewController, UIPickerViewDelegate, UIPickerVi
             self.objetive = objetive
             myTabBar.objetive = self.objetive
             txtName.text = self.objetive.name
+            txtVer.text = String(self.objetive.version)
+            picketDate.date  = self.objetive.date
             txtDescrip.text = self.objetive.descrip
             self.pickerPrior.selectRow((self.objetive.prior-1), inComponent: 0, animated: false)
             self.pickerUrge.selectRow((self.objetive.urge-1), inComponent: 0, animated: false)
@@ -145,6 +150,13 @@ class DataObjetiveController: UIViewController, UIPickerViewDelegate, UIPickerVi
         if(sender.tag == 5){
             objetive.descrip = txtDescrip.text!
         }
+        if(sender.tag == 5){
+               objetive.version = Utils.StringToDouble(string: txtVer.text!)
+        }
+    }
+    
+    @IBAction func pickerChanged(_ sender: Any) {
+        objetive.date = picketDate.date
     }
     
 }
