@@ -749,7 +749,7 @@
                                                     <action selector="textFieldEditingChange:" destination="Iie-MR-Gnu" eventType="editingChanged" id="L3w-vB-Orl"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Versión" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2FX-Sd-HVa">
+                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Versión" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2FX-Sd-HVa">
                                                 <rect key="frame" x="0.0" y="48" width="394" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Rsp-S3-pLD"/>
@@ -777,7 +777,7 @@
                                                         </date>
                                                         <locale key="locale" localeIdentifier="es"/>
                                                         <connections>
-                                                            <action selector="datePickerChanged:" destination="Iie-MR-Gnu" eventType="valueChanged" id="efY-O7-pPB"/>
+                                                            <action selector="pickerChanged:" destination="Iie-MR-Gnu" eventType="valueChanged" id="TYq-9b-BS1"/>
                                                         </connections>
                                                     </datePicker>
                                                 </subviews>
@@ -877,6 +877,7 @@
                         <outlet property="txtDescComple" destination="Ic8-bO-bGP" id="o39-lI-Q5f"/>
                         <outlet property="txtDescrip" destination="WQo-he-hFG" id="Db0-xU-Icl"/>
                         <outlet property="txtName" destination="8fp-LX-dZV" id="rQu-PZ-6YS"/>
+                        <outlet property="txtVer" destination="2FX-Sd-HVa" id="0Dm-sr-fK2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="00x-Me-NMa" userLabel="First Responder" sceneMemberID="firstResponder"/>

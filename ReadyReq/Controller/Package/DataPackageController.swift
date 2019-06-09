@@ -29,7 +29,7 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
         package.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
-         self.picketDate.datePickerMode = .date
+        self.picketDate.datePickerMode = .date
         if(idPackage != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_search.php?a=\(idPackage)"
@@ -73,13 +73,13 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
             let controller = UIAlertController(title: NSLocalizedString("DELETE", comment: ""), message:NSLocalizedString("WANT_DELETE", comment: "")
                 , preferredStyle: UIAlertController.Style.alert)
             let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
-            
+                
                 let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_delete.php?a=\(self.package.id)"
                 self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let webServices = Utils()
-            webServices.delegateCUD = self
+                let webServices = Utils()
+                webServices.delegateCUD = self
                 webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: self.activityIndicator)
-            
+                
             }
             controller.addAction(action)
             controller.addAction(UIAlertAction(title: NSLocalizedString("CANCEL", comment: ""), style: .cancel, handler: nil))
@@ -120,7 +120,7 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
             urlPath += "e=\(package.category)&f=\(package.comentary)"
         }else{
             urlPath += "create.php?a=\(package.name)&b=\(package.version)&c=\(Utils.DateToString(date: package.date))&"
-             urlPath += "d=\(package.category)&e=\(package.comentary)"
+            urlPath += "d=\(package.category)&e=\(package.comentary)"
         }
         urlPath = Utils.convert_Url(url: urlPath)
         if(!urlPath.elementsEqual("ERROR")){

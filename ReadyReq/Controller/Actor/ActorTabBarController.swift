@@ -28,11 +28,13 @@ class ActorTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveDe
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
         var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_"
         if(idActor != AppDelegate.NOTHING){
-            urlPath += "update.php?a=\(actor.id)&b=\(actor.name)&c=\(actor.descrip)&d=\(actor.comple)&"
-            urlPath += "e=\(actor.descComple)&f=\(actor.category)&g=\(actor.comentary)"
+            urlPath += "update.php?a=\(actor.id)&b=\(actor.name)&c=\(actor.version)&d=\(Utils.DateToString(date: actor.date))&"
+            urlPath += "e=\(actor.descrip)&f=\(actor.comple)&"
+            urlPath += "g=\(actor.descComple)&h=\(actor.category)&i=\(actor.comentary)"
         }else{
-            urlPath += "create.php?a=\(actor.name)&b=\(actor.descrip)&c=\(actor.comple)&"
-            urlPath += "d=\(actor.descComple)&e=\(actor.category)&f=\(actor.comentary)"
+            urlPath += "create.php?a=\(actor.name)&b=\(actor.version)&c=\(Utils.DateToString(date: actor.date))&"
+            urlPath += "d=\(actor.descrip)&e=\(actor.comple)&"
+            urlPath += "f=\(actor.descComple)&g=\(actor.category)&h=\(actor.comentary)"
         }
         urlPath = Utils.convert_Url(url: urlPath)
         if(!urlPath.elementsEqual("ERROR")){
@@ -51,11 +53,19 @@ class ActorTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveDe
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idActor != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_delete.php?a=\(actor.id)"
-            activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let webServices = Utils()
-            webServices.delegateCUD = self
-            webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
+            let controller = UIAlertController(title: NSLocalizedString("DELETE", comment: ""), message:NSLocalizedString("WANT_DELETE", comment: "")
+                , preferredStyle: UIAlertController.Style.alert)
+            let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
+                
+                let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_delete.php?a=\(self.actor.id)"
+                self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
+                let webServices = Utils()
+                webServices.delegateCUD = self
+                webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: self.activityIndicator)
+            }
+            controller.addAction(action)
+            controller.addAction(UIAlertAction(title: NSLocalizedString("CANCEL", comment: ""), style: .cancel, handler: nil))
+            self.present(controller, animated: true)
         }else{
             self.dismiss(animated: true)
         }
