@@ -16,6 +16,8 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var pickerCateg: UIPickerView!
     @IBOutlet weak var txtComen: UITextView!
+    @IBOutlet weak var txtVer: UITextField!
+    @IBOutlet weak var picketDate: UIDatePicker!
     var activityIndicator : NVActivityIndicatorView!
     var idPackage : Int = 0
     var package = Package()
@@ -27,6 +29,7 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
         package.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
+         self.picketDate.datePickerMode = .date
         if(idPackage != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_search.php?a=\(idPackage)"
@@ -40,6 +43,8 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
         if(codeError == AppDelegate.SUCCESS_DATA){
             self.package = package
             txtName.text = self.package.name
+            txtVer.text = String(self.package.version)
+            picketDate.date  = self.package.date
             self.pickerCateg.selectRow((self.package.category-1), inComponent: 0, animated: false)
             txtComen.text = self.package.comentary
         }
@@ -57,17 +62,28 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
         package.name = txtName.text!
+        package.version = Utils.StringToDouble(string: txtVer.text!)
+        package.date = picketDate.date
         package.comentary = txtComen.text!
         savePackage()
     }
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idPackage != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_delete.php?a=\(package.id)"
-            activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
+            let controller = UIAlertController(title: NSLocalizedString("DELETE", comment: ""), message:NSLocalizedString("WANT_DELETE", comment: "")
+                , preferredStyle: UIAlertController.Style.alert)
+            let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
+            
+                let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_delete.php?a=\(self.package.id)"
+                self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
-            webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
+                webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: self.activityIndicator)
+            
+            }
+            controller.addAction(action)
+            controller.addAction(UIAlertAction(title: NSLocalizedString("CANCEL", comment: ""), style: .cancel, handler: nil))
+            self.present(controller, animated: true)
         }else{
             self.dismiss(animated: true)
         }
@@ -100,9 +116,11 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func savePackage(){
         var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_"
         if(idPackage != AppDelegate.NOTHING){
-            urlPath += "update.php?a=\(package.id)&b=\(package.name)&c=\(package.category)&d=\(package.comentary)"
+            urlPath += "update.php?a=\(package.id)&b=\(package.name)&c=\(package.version)&d=\(Utils.DateToString(date: package.date))&"
+            urlPath += "e=\(package.category)&f=\(package.comentary)"
         }else{
-            urlPath += "create.php?a=\(package.name)&b=\(package.category)&c=\(package.comentary)"
+            urlPath += "create.php?a=\(package.name)&b=\(package.version)&c=\(Utils.DateToString(date: package.date))&"
+             urlPath += "d=\(package.category)&e=\(package.comentary)"
         }
         urlPath = Utils.convert_Url(url: urlPath)
         if(!urlPath.elementsEqual("ERROR")){
@@ -114,5 +132,4 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
             ToolsView.showToast(message: NSLocalizedString("ERROR_URL", comment: ""), controller: self)
         }
     }
-    
 }

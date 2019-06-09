@@ -19,7 +19,7 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var switchDevel: UISwitch!
     @IBOutlet weak var pickerCateg: UIPickerView!
     @IBOutlet weak var txtComen: UITextView!
-     @IBOutlet weak var txtVer: UITextField!
+    @IBOutlet weak var txtVer: UITextField!
     @IBOutlet weak var picketDate: UIDatePicker!
     var activityIndicator : NVActivityIndicatorView!
     var idWorker : Int = 0
