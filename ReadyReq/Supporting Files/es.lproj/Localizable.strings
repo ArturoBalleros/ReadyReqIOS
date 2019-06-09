@@ -26,3 +26,7 @@
 "ORDER" = "Ordenar";
 "SELECT" = "Seleccionar";
 "REF" = "Recargando";
+
+"CANCEL" = "Cancelar";
+"DELETE" = "Borrar";
+"WANT_DELETE" = "¿Deseas borrar el elemento?";

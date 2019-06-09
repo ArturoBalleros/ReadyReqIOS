@@ -15,7 +15,7 @@
 "ERROR_READ_FILE" = "The file could not be read";
 "ERROR_CONNECT" = "Unable to connect to server";
 "CONF_FRAG_ERROR_1" = "The file could not be written";
-"SUCCESS" = "Correcto";
+"SUCCESS" = "Correct";
 
 "VLOW" = "Very Low";
 "LOW" = "Low";
@@ -26,3 +26,7 @@
 "ORDER" = "Order";
 "SELECT" = "Select";
 "REF" = "Pull to refresh";
+
+"CANCEL" = "Cancel";
+"DELETE" = "Delete";
+"WANT_DELETE" = "Do you want to delete item?";
