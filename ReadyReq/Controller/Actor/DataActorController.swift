@@ -22,6 +22,8 @@ class DataActorController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var txtDescComple: UITextField!
     @IBOutlet weak var pickerCateg: UIPickerView!
     @IBOutlet weak var txtComen: UITextView!
+    @IBOutlet weak var txtVer: UITextField!
+    @IBOutlet weak var picketDate: UIDatePicker!
     var activityIndicator : NVActivityIndicatorView!
     var actor = Actor()
     
@@ -36,6 +38,7 @@ class DataActorController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         self.pickerComple.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
+        self.picketDate.datePickerMode = .date 
         if(myTabBar.idActor != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_search.php?a=\(myTabBar.idActor)"
@@ -53,6 +56,8 @@ class DataActorController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             self.actor = actor
             myTabBar.actor = self.actor
             txtName.text = self.actor.name
+            txtVer.text = String(self.actor.version)
+            picketDate.date  = self.actor.date
             txtDescrip.text = self.actor.descrip
             txtDescComple.text = self.actor.descComple
             self.pickerCateg.selectRow((self.actor.category-1), inComponent: 0, animated: false)
@@ -116,6 +121,15 @@ class DataActorController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         if(sender.tag == 4){
             actor.descComple = txtDescComple.text!
         }
+        if(sender.tag == 6){
+             actor.version = Utils.StringToDouble(string: txtVer.text!)
+        }
     }
     
+    // MARK: - DatePicker
+    
+    @IBAction func pickerChanged(_ sender: Any) {
+         actor.date = picketDate.date
+    }
+
 }
