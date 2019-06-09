@@ -9,49 +9,25 @@
 import Foundation
 import NVActivityIndicatorView
 
-class ReqInfo : NSObject {
+class ReqInfo : ObjEstandar {
     
     // MARK: - Variables
     
     weak var delegate: ReqInfoProtocol!
-    var id : Int
-    var name : String
-    var descrip : String
-    var prior : Int
-    var urge : Int
-    var esta : Int
-    var state : Bool
-    var category : Int
-    var comentary : String
     var timeMed : Int
     var timeMax : Int
     var ocuMed : Int
     var ocuMax : Int
-    var autors : NSMutableArray
-    var sources : NSMutableArray
-    var objetives : NSMutableArray
     var requeriments : NSMutableArray
     var datEspec : NSMutableArray
     
     // MARK: - Methods
     
     override init() {
-        self.id = -1
-        self.name = ""
-        self.descrip = ""
-        self.prior = 3
-        self.urge = 3
-        self.esta = 3
-        self.state = false
-        self.category = 1
-        self.comentary = ""
         self.timeMed = 0
         self.timeMax = 0
         self.ocuMed = 0
         self.ocuMax = 0
-        self.autors = NSMutableArray()
-        self.sources = NSMutableArray()
-        self.objetives = NSMutableArray()
         self.requeriments = NSMutableArray()
         self.datEspec = NSMutableArray()
     }
@@ -117,6 +93,8 @@ class ReqInfo : NSObject {
                             element = jsonElement[0] as! NSDictionary
                             if  let id = element["Id"] as? String,
                                 let name = element["Nombre"] as? String,
+                                let version = element["Version"] as? String,
+                                let date = element["Fecha"] as? String,
                                 let descrip = element["Descripcion"] as? String,
                                 let estab = element["Estabilidad"] as? String,
                                 let prior = element["Prioridad"] as? String,
@@ -131,6 +109,8 @@ class ReqInfo : NSObject {
                                 
                                 reqinfo.id = Int(id)!
                                 reqinfo.name = name
+                                reqinfo.version = Utils.StringToDouble(string: version)
+                                reqinfo.date = Utils.StringToDate(string: date, MySQL: true)
                                 reqinfo.descrip = descrip
                                 reqinfo.esta = Int(estab)!
                                 reqinfo.prior = Int(prior)!
@@ -221,5 +201,4 @@ class ReqInfo : NSObject {
         }
         task.resume()
     }
-    
 }

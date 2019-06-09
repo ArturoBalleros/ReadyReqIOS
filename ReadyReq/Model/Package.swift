@@ -9,23 +9,15 @@
 import Foundation
 import NVActivityIndicatorView
 
-class Package : NSObject{
+class Package : ObjBase{
     
     // MARK: - Variables
     
     weak var delegate: PackageProtocol!
-    var id : Int
-    var name : String
-    var category : Int
-    var comentary : String
     
     // MARK: - Methods
     
     override init() {
-        self.id = -1
-        self.name = ""
-        self.category = 1
-        self.comentary = ""
     }
     
     override var description : String {
@@ -75,10 +67,14 @@ class Package : NSObject{
                             print(element)
                             if  let id = element["Id"] as? String,
                                 let name = element["Nombre"] as? String,
+                                let version = element["Version"] as? String,
+                                let date = element["Fecha"] as? String,
                                 let category = element["Categoria"] as? String,
                                 let comentary = element["Comentario"] as? String {
                                 package.id = Int(id)!
                                 package.name = name
+                                package.version = Utils.StringToDouble(string: version)
+                                package.date = Utils.StringToDate(string: date, MySQL: true)
                                 package.category = Int(category)!
                                 package.comentary = comentary
                                 codeError = AppDelegate.SUCCESS_DATA
@@ -99,5 +95,4 @@ class Package : NSObject{
         }
         task.resume()
     }
-    
 }

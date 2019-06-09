@@ -9,27 +9,15 @@
 import Foundation
 import NVActivityIndicatorView
 
-class ReqFun : NSObject {
+class ReqFun : ObjEstandar {
     
     // MARK: - Variables
     
     weak var delegate: ReqFunProtocol!
-    var id : Int
-    var name : String
-    var descrip : String
     var preCond : String
     var postCond : String
     var package : Int
-    var prior : Int
-    var urge : Int
-    var esta : Int
     var comple : Int
-    var state : Bool
-    var category : Int
-    var comentary : String
-    var autors : NSMutableArray
-    var sources : NSMutableArray
-    var objetives : NSMutableArray
     var requeriments : NSMutableArray
     var actors : NSMutableArray
     var secNor : NSMutableArray
@@ -38,22 +26,10 @@ class ReqFun : NSObject {
     // MARK: - Methods
     
     override init() {
-        self.id = -1
-        self.name = ""
-        self.descrip = ""
         self.preCond = ""
         self.postCond = ""
         self.package = 0
-        self.prior = 3
-        self.urge = 3
-        self.esta = 3
         self.comple = 2
-        self.state = false
-        self.category = 1
-        self.comentary = ""
-        self.autors = NSMutableArray()
-        self.sources = NSMutableArray()
-        self.objetives = NSMutableArray()
         self.requeriments = NSMutableArray()
         self.actors = NSMutableArray()
         self.secNor = NSMutableArray()
@@ -122,6 +98,8 @@ class ReqFun : NSObject {
                             element = jsonElement[0] as! NSDictionary
                             if  let id = element["Id"] as? String,
                                 let name = element["Nombre"] as? String,
+                                let version = element["Version"] as? String,
+                                let date = element["Fecha"] as? String,
                                 let descrip = element["Descripcion"] as? String,
                                 let estab = element["Estabilidad"] as? String,
                                 let comple = element["Complejidad"] as? String,
@@ -136,6 +114,8 @@ class ReqFun : NSObject {
                                 
                                 reqfun.id = Int(id)!
                                 reqfun.name = name
+                                reqfun.version = Utils.StringToDouble(string: version)
+                                reqfun.date = Utils.StringToDate(string: date, MySQL: true)
                                 reqfun.descrip = descrip
                                 reqfun.esta = Int(estab)!
                                 reqfun.comple = Int(comple)!
@@ -246,5 +226,4 @@ class ReqFun : NSObject {
         }
         task.resume()
     }
-    
 }

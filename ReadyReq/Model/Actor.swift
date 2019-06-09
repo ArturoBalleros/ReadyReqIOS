@@ -9,31 +9,23 @@
 import Foundation
 import NVActivityIndicatorView
 
-class Actor : NSObject {
+class Actor : ObjBase {
     
     // MARK: - Variables
     
     weak var delegate: ActorProtocol!
-    var id : Int
-    var name : String
     var descrip : String
     var comple : Int
     var descComple : String
-    var category : Int
-    var comentary : String
     var autors : NSMutableArray
     var sources : NSMutableArray
     
     // MARK: - Methods
     
     override init() {
-        self.id = -1
-        self.name = ""
         self.descrip = ""
         self.comple = 2
         self.descComple = ""
-        self.category = 1
-        self.comentary = ""
         self.autors = NSMutableArray()
         self.sources = NSMutableArray()
     }
@@ -89,6 +81,8 @@ class Actor : NSObject {
                             element = jsonElement[0] as! NSDictionary
                             if  let id = element["Id"] as? String,
                                 let name = element["Nombre"] as? String,
+                                let version = element["Version"] as? String,
+                                let date = element["Fecha"] as? String,
                                 let descrip = element["Descripcion"] as? String,
                                 let descComple = element["DescComple"] as? String,
                                 let comple = element["Complejidad"] as? String,
@@ -97,6 +91,8 @@ class Actor : NSObject {
                                 
                                 actor.id = Int(id)!
                                 actor.name = name
+                                actor.version = Utils.StringToDouble(string: version)
+                                actor.date = Utils.StringToDate(string: date, MySQL: true)
                                 actor.descrip = descrip
                                 actor.descComple = descComple
                                 actor.comple = Int(comple)!
@@ -143,5 +139,4 @@ class Actor : NSObject {
         }
         task.resume()
     }
-    
 }

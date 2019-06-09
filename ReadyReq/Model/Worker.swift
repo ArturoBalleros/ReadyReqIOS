@@ -9,29 +9,21 @@
 import Foundation
 import NVActivityIndicatorView
 
-class Worker : NSObject{
+class Worker : ObjBase{
     
     // MARK: - Variables
     
     weak var delegate: WorkerProtocol!
-    var id : Int
-    var name : String
     var organization : String
     var role : String
     var developer : Bool
-    var category : Int
-    var comentary : String
     
     // MARK: - Methods
     
     override init() {
-        self.id = -1
-        self.name = ""
         self.organization = ""
         self.role = ""
         self.developer = false
-        self.category = 1
-        self.comentary = ""
     }
     
     override var description : String {
@@ -85,6 +77,8 @@ class Worker : NSObject{
                             
                             if  let id = element["Id"] as? String,
                                 let name = element["Nombre"] as? String,
+                                let version = element["Version"] as? String,
+                                let date = element["Fecha"] as? String,
                                 let organization = element["Organizacion"] as? String,
                                 let role = element["Rol"] as? String,
                                 let developer = element["Desarrollador"] as? String,
@@ -92,6 +86,8 @@ class Worker : NSObject{
                                 let comentary = element["Comentario"] as? String {
                                 worker.id = Int(id)!
                                 worker.name = name
+                                worker.version = Utils.StringToDouble(string: version)
+                                worker.date = Utils.StringToDate(string: date, MySQL: true)
                                 worker.organization = organization
                                 worker.role = role
                                 if(Int(developer) == 0){
@@ -119,5 +115,4 @@ class Worker : NSObject{
         }
         task.resume()
     }
-    
 }

@@ -9,39 +9,16 @@
 import Foundation
 import NVActivityIndicatorView
 
-class Objetive : NSObject {
+class Objetive : ObjEstandar {
     
     // MARK: - Variables
     
     weak var delegate: ObjetiveProtocol!
-    var id : Int
-    var name : String
-    var descrip : String
-    var prior : Int
-    var urge : Int
-    var esta : Int
-    var state : Bool
-    var category : Int
-    var comentary : String
-    var autors : NSMutableArray
-    var sources : NSMutableArray
-    var objetives : NSMutableArray
+   
     
     // MARK: - Methods
     
     override init() {
-        self.id = -1
-        self.name = ""
-        self.descrip = ""
-        self.prior = 3
-        self.urge = 3
-        self.esta = 3
-        self.state = false
-        self.category = 1
-        self.comentary = ""
-        self.autors = NSMutableArray()
-        self.sources = NSMutableArray()
-        self.objetives = NSMutableArray()
     }
     
     override var description : String {
@@ -98,6 +75,8 @@ class Objetive : NSObject {
                             element = jsonElement[0] as! NSDictionary
                             if  let id = element["Id"] as? String,
                                 let name = element["Nombre"] as? String,
+                                let version = element["Version"] as? String,
+                                let date = element["Fecha"] as? String,
                                 let descrip = element["Descripcion"] as? String,
                                 let estab = element["Estabilidad"] as? String,
                                 let prior = element["Prioridad"] as? String,
@@ -108,6 +87,8 @@ class Objetive : NSObject {
                                 
                                 objetive.id = Int(id)!
                                 objetive.name = name
+                                objetive.version = Utils.StringToDouble(string: version)
+                                objetive.date = Utils.StringToDate(string: date, MySQL: true)
                                 objetive.descrip = descrip
                                 objetive.esta = Int(estab)!
                                 objetive.prior = Int(prior)!
@@ -171,5 +152,4 @@ class Objetive : NSObject {
         }
         task.resume()
     }
-    
 }
