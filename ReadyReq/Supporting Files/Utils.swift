@@ -415,4 +415,36 @@ class Utils{
         task.resume()
     }
     
+    public static func StringToDouble (string: String) -> Double {
+        if let resul = Double(string) {
+            if let round = Double(String(format: "%.2f", Double(round(1000*resul)/1000))){
+                return round
+            }else{
+                return 1.0
+            }
+        } else {
+            return 1.0
+        }
+    }
+    
+    func DoubleToString (double: Double) -> String {
+        let resul = String(format: "%.2f", double)
+        return resul
+    }
+    
+    public static func StringToDate (string: String, MySQL: Bool) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = (MySQL) ? "yyyy-MM-dd" : "dd-MM-yyyy"
+        if let date = dateFormatter.date(from:string){
+            return date
+        }else{
+            return Date()
+        }
+    }
+    
+    public static func DateToString (date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd" //yyyy
+        return formatter.string(from: date)
+    }
 }

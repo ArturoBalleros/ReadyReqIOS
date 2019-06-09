@@ -19,6 +19,8 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var switchDevel: UISwitch!
     @IBOutlet weak var pickerCateg: UIPickerView!
     @IBOutlet weak var txtComen: UITextView!
+     @IBOutlet weak var txtVer: UITextField!
+    @IBOutlet weak var picketDate: UIDatePicker!
     var activityIndicator : NVActivityIndicatorView!
     var idWorker : Int = 0
     var worker = Worker()
@@ -30,7 +32,7 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         worker.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
-        
+        self.picketDate.datePickerMode = .date
         if(idWorker != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_search.php?a=\(idWorker)"
@@ -46,6 +48,8 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             txtName.text = self.worker.name
             txtOrg.text = self.worker.organization
             txtRol.text = self.worker.role
+            txtVer.text = String(self.worker.version)
+            picketDate.date  = self.worker.date
             self.pickerCateg.selectRow((self.worker.category-1), inComponent: 0, animated: false)
             self.switchDevel.setOn(self.worker.developer, animated: false)
             txtComen.text = self.worker.comentary
@@ -80,6 +84,8 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
         worker.name = txtName.text!
+        worker.version = Utils.StringToDouble(string: txtVer.text!)
+        worker.date = picketDate.date
         worker.organization = txtOrg.text!
         worker.role = txtRol.text!
         worker.comentary = txtComen.text!
@@ -119,13 +125,15 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     func saveWorker(){
         var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_"
         if(idWorker != AppDelegate.NOTHING){
-            urlPath += "update.php?a=\(worker.id)&b=\(worker.name)&c=\(worker.organization)&d=\(worker.role)&"
-            if(worker.developer){ urlPath += "e=\(1)&" }else{ urlPath += "e=\(0)&" }
-            urlPath += "f=\(worker.category)&g=\(worker.comentary)"
+            urlPath += "update.php?a=\(worker.id)&b=\(worker.name)&c=\(worker.version)&d=\(Utils.DateToString(date: worker.date))&"
+            urlPath += "e=\(worker.organization)&f=\(worker.role)&"
+            if(worker.developer){ urlPath += "g=\(1)&" }else{ urlPath += "g=\(0)&" }
+            urlPath += "h=\(worker.category)&i=\(worker.comentary)"
         }else{
-            urlPath += "create.php?a=\(worker.name)&b=\(worker.organization)&c=\(worker.role)&"
-            if(worker.developer){ urlPath += "d=\(1)&" }else{ urlPath += "d=\(0)&" }
-            urlPath += "e=\(worker.category)&f=\(worker.comentary)"
+            urlPath += "create.php?a=\(worker.name)&b=\(worker.version)&c=\(Utils.DateToString(date: worker.date))&"
+            urlPath += "d=\(worker.organization)&e=\(worker.role)&"
+            if(worker.developer){ urlPath += "f=\(1)&" }else{ urlPath += "f=\(0)&" }
+            urlPath += "g=\(worker.category)&h=\(worker.comentary)"
         }
         urlPath = Utils.convert_Url(url: urlPath)
         if(!urlPath.elementsEqual("ERROR")){
@@ -137,5 +145,4 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             ToolsView.showToast(message: NSLocalizedString("ERROR_URL", comment: ""), controller: self)
         }
     }
-    
 }
