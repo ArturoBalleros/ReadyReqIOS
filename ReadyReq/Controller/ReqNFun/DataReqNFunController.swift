@@ -24,6 +24,8 @@ class DataReqNFunController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var switchState: UISwitch!
     @IBOutlet weak var pickerCateg: UIPickerView!
     @IBOutlet weak var txtComen: UITextView!
+    @IBOutlet weak var txtVer: UITextField!
+    @IBOutlet weak var picketDate: UIDatePicker!
     var activityIndicator : NVActivityIndicatorView!
     var reqnfun = ReqNFun()
     
@@ -41,6 +43,7 @@ class DataReqNFunController: UIViewController, UIPickerViewDelegate, UIPickerVie
         self.pickerEstab.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
+          self.picketDate.datePickerMode = .date
         if(myTabBar.idReqNFun != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_search.php?a=\(myTabBar.idReqNFun)"
@@ -61,6 +64,8 @@ class DataReqNFunController: UIViewController, UIPickerViewDelegate, UIPickerVie
             self.reqnfun = reqnfun
             myTabBar.reqnfun = self.reqnfun
             txtName.text = self.reqnfun.name
+            txtVer.text = String(self.reqnfun.version)
+            picketDate.date  = self.reqnfun.date
             txtDescrip.text = self.reqnfun.descrip
             self.pickerPrior.selectRow((self.reqnfun.prior-1), inComponent: 0, animated: false)
             self.pickerUrge.selectRow((self.reqnfun.urge-1), inComponent: 0, animated: false)
@@ -145,6 +150,15 @@ class DataReqNFunController: UIViewController, UIPickerViewDelegate, UIPickerVie
         if(sender.tag == 5){
             reqnfun.descrip = txtDescrip.text!
         }
+        if(sender.tag == 6){
+            reqnfun.version = Utils.StringToDouble(string: txtVer.text!)
+        }
+    }
+    
+    // MARK: - DatePicket
+    
+    @IBAction func pickerChanged(_ sender: Any) {
+        reqnfun.date = picketDate.date
     }
     
 }

@@ -150,10 +150,12 @@ class DataObjetiveController: UIViewController, UIPickerViewDelegate, UIPickerVi
         if(sender.tag == 5){
             objetive.descrip = txtDescrip.text!
         }
-        if(sender.tag == 5){
+        if(sender.tag == 6){
                objetive.version = Utils.StringToDouble(string: txtVer.text!)
         }
     }
+    
+    // MARK: - DatePicket
     
     @IBAction func pickerChanged(_ sender: Any) {
         objetive.date = picketDate.date
