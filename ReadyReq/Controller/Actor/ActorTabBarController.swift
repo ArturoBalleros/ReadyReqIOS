@@ -26,7 +26,7 @@ class ActorTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveDe
     // MARK: - Buttons
     
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
-        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_"
+        var urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_"
         if(idActor != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(actor.id)&b=\(actor.name)&c=\(actor.version)&d=\(Utils.DateToString(date: actor.date))&"
             urlPath += "e=\(actor.descrip)&f=\(actor.comple)&"
@@ -57,7 +57,7 @@ class ActorTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveDe
                 , preferredStyle: UIAlertController.Style.alert)
             let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
                 
-                let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_delete.php?a=\(self.actor.id)"
+                let urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_delete.php?a=\(self.actor.id)"
                 self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
                 let webServices = Utils()
                 webServices.delegateCUD = self
@@ -77,7 +77,7 @@ class ActorTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveDe
         Utils.showError(codeError: codeError, controller: self)
         ToolsView.hideActivityIndicator(activityIndicator: activityIndicator)
         if (idActor == AppDelegate.NOTHING){
-            var urlPath = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_id.php?a=\(actor.name)"
+            var urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/actor_id.php?a=\(actor.name)"
             urlPath = Utils.convert_Url(url: urlPath)
             if(!urlPath.elementsEqual("ERROR")){
                 activityIndicator = ToolsView.beginActivityIndicator(view: self.view)

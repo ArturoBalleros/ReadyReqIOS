@@ -21,7 +21,7 @@ class ObjetiveListController: UIViewController, UITableViewDelegate, UITableView
     var returnSegue = false
     var items: NSMutableArray = NSMutableArray()
     let itemsSearch: NSMutableArray = NSMutableArray()
-    let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_frag_list.php"
+    let urlPath: String = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_frag_list.php"
     let generic = Generic()
     
     // MARK: - View

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F024D9F22AC91610019D8F2 /* ObjBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F024D9E22AC91610019D8F2 /* ObjBase.swift */; };
 		1F16816521C150B1005B1B38 /* ObjetiveTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F16816421C150B1005B1B38 /* ObjetiveTabBarController.swift */; };
 		1F16816721C15E21005B1B38 /* DataObjetiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F16816621C15E21005B1B38 /* DataObjetiveController.swift */; };
 		1F1AC4F621C17A8E00C5B2D1 /* AuthorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1AC4F521C17A8E00C5B2D1 /* AuthorController.swift */; };
@@ -24,6 +25,7 @@
 		1F7C2ED221C486D200CD9F6A /* DatEspController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C2ED121C486D200CD9F6A /* DatEspController.swift */; };
 		1F8029A621ACA3580033E33D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F8029A821ACA3580033E33D /* Localizable.strings */; };
 		1F84F24A21BB2A4C007348F6 /* DataGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F84F24921BB2A4C007348F6 /* DataGroupController.swift */; };
+		1F87FDFC22AD51C2003EA84A /* ObjEstandar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87FDFB22AD51C2003EA84A /* ObjEstandar.swift */; };
 		1F9F3C1021AD4C6900126B6E /* ConfigurationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F3C0F21AD4C6900126B6E /* ConfigurationController.swift */; };
 		1FB1616621C0A05300EFB6FC /* AddItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB1616521C0A05300EFB6FC /* AddItemsController.swift */; };
 		1FD529DF21C4157900FA1C4F /* ReqNFunTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD529DE21C4157900FA1C4F /* ReqNFunTabBarController.swift */; };
@@ -57,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F024D9E22AC91610019D8F2 /* ObjBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjBase.swift; sourceTree = "<group>"; };
 		1F16816421C150B1005B1B38 /* ObjetiveTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjetiveTabBarController.swift; sourceTree = "<group>"; };
 		1F16816621C15E21005B1B38 /* DataObjetiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObjetiveController.swift; sourceTree = "<group>"; };
 		1F1AC4F521C17A8E00C5B2D1 /* AuthorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorController.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		1F8029A721ACA3580033E33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1F8029AB21ACA3810033E33D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1F84F24921BB2A4C007348F6 /* DataGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGroupController.swift; sourceTree = "<group>"; };
+		1F87FDFB22AD51C2003EA84A /* ObjEstandar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjEstandar.swift; sourceTree = "<group>"; };
 		1F9F3C0F21AD4C6900126B6E /* ConfigurationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationController.swift; sourceTree = "<group>"; };
 		1FB1616521C0A05300EFB6FC /* AddItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemsController.swift; sourceTree = "<group>"; };
 		1FD529DE21C4157900FA1C4F /* ReqNFunTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqNFunTabBarController.swift; sourceTree = "<group>"; };
@@ -274,6 +278,8 @@
 				1FE2EDC321BF48DF001867AF /* ReqInfo.swift */,
 				1FE2EDC521BF48EF001867AF /* ReqNFun.swift */,
 				1FE3BB4021BC8E430058F838 /* Worker.swift */,
+				1F024D9E22AC91610019D8F2 /* ObjBase.swift */,
+				1F87FDFB22AD51C2003EA84A /* ObjEstandar.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -438,6 +444,7 @@
 				1F71FA8121B433A000A4C5B7 /* ObjetiveListController.swift in Sources */,
 				1F3557CA21BD615B0066A173 /* Utils.swift in Sources */,
 				1FF2A56621AC69AB0091DE60 /* GroupListController.swift in Sources */,
+				1F87FDFC22AD51C2003EA84A /* ObjEstandar.swift in Sources */,
 				1F71FA8321B4341C00A4C5B7 /* ReqNFunListController.swift in Sources */,
 				1FE2ED9621BEFFD6001867AF /* ActorTabBarController.swift in Sources */,
 				1F7C2ED021C4639B00CD9F6A /* DataReqInfoController.swift in Sources */,
@@ -465,6 +472,7 @@
 				1FF6642E21C571F700E9DC82 /* DataReqFunController.swift in Sources */,
 				1F71FA8521B4348F00A4C5B7 /* ReqInfoListController.swift in Sources */,
 				1FE3BB4121BC8E430058F838 /* Worker.swift in Sources */,
+				1F024D9F22AC91610019D8F2 /* ObjBase.swift in Sources */,
 				1FF6643021C576A700E9DC82 /* SecNorController.swift in Sources */,
 				1F1AC4FA21C17ABC00C5B2D1 /* ObjetiveController.swift in Sources */,
 			);

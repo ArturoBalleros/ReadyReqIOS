@@ -32,7 +32,7 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
         self.picketDate.datePickerMode = .date
         if(idPackage != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_search.php?a=\(idPackage)"
+            let urlPath: String = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_search.php?a=\(idPackage)"
             package.getPackage(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }
     }
@@ -74,7 +74,7 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
                 , preferredStyle: UIAlertController.Style.alert)
             let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
                 
-                let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_delete.php?a=\(self.package.id)"
+                let urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_delete.php?a=\(self.package.id)"
                 self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
                 let webServices = Utils()
                 webServices.delegateCUD = self
@@ -114,7 +114,7 @@ class DataPackageController: UIViewController, UIPickerViewDelegate, UIPickerVie
     // MARK: - Methods
     
     func savePackage(){
-        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_"
+        var urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_"
         if(idPackage != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(package.id)&b=\(package.name)&c=\(package.version)&d=\(Utils.DateToString(date: package.date))&"
             urlPath += "e=\(package.category)&f=\(package.comentary)"

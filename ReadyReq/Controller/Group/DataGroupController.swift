@@ -35,7 +35,7 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         self.picketDate.datePickerMode = .date
         if(idWorker != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_search.php?a=\(idWorker)"
+            let urlPath: String = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_search.php?a=\(idWorker)"
             worker.getWorker(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }
     }
@@ -77,7 +77,7 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
                 , preferredStyle: UIAlertController.Style.alert)
             let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
                 
-                let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_delete.php?a=\(self.worker.id)"
+                let urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_delete.php?a=\(self.worker.id)"
                 self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
                 let webServices = Utils()
                 webServices.delegateCUD = self
@@ -134,7 +134,7 @@ class DataGroupController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     // MARK: - Methods
     
     func saveWorker(){
-        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_"
+        var urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/group_"
         if(idWorker != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(worker.id)&b=\(worker.name)&c=\(worker.version)&d=\(Utils.DateToString(date: worker.date))&"
             urlPath += "e=\(worker.organization)&f=\(worker.role)&"

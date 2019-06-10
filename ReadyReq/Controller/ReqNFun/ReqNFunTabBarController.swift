@@ -26,7 +26,7 @@ class ReqNFunTabBarController: UITabBarController, CUDProtocol, IdProtocol, Save
     // MARK: - Buttons
     
     @IBAction func savePressed(_ sender: UIBarButtonItem) {        
-        var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_"
+        var urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_"
         if(idReqNFun != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(reqnfun.id)&b=\(reqnfun.name)&c=\(reqnfun.version)&d=\(Utils.DateToString(date: reqnfun.date))&"
             urlPath += "e=\(reqnfun.descrip)&f=\(reqnfun.prior)&"
@@ -62,7 +62,7 @@ class ReqNFunTabBarController: UITabBarController, CUDProtocol, IdProtocol, Save
                 , preferredStyle: UIAlertController.Style.alert)
             let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
             
-                let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_delete.php?a=\(self.reqnfun.id)"
+                let urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_delete.php?a=\(self.reqnfun.id)"
                 self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
@@ -83,7 +83,7 @@ class ReqNFunTabBarController: UITabBarController, CUDProtocol, IdProtocol, Save
         Utils.showError(codeError: codeError, controller: self)
         ToolsView.hideActivityIndicator(activityIndicator: activityIndicator)
         if (idReqNFun == AppDelegate.NOTHING){
-            var urlPath = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_id.php?a=\(reqnfun.name)"
+            var urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_id.php?a=\(reqnfun.name)"
             urlPath = Utils.convert_Url(url: urlPath)
             if(!urlPath.elementsEqual("ERROR")){
                 activityIndicator = ToolsView.beginActivityIndicator(view: self.view)

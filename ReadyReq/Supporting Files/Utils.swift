@@ -72,7 +72,7 @@ class Utils{
         let descrip = item.name
         let tipoReq = item.tipoReq
         
-        var url : String = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/rel_create.php?"
+        var url : String = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/rel_create.php?"
         let paramB : String = "b=\(id),\(idO)"
         if mode == AppDelegate.ACTORES {
             if flagTab == AppDelegate.AUTH {
@@ -179,7 +179,7 @@ class Utils{
     }
     
     public static func getUrlDelete(mode: Int, flagTab: Int, id: Int, g: Generic) -> String{
-        var url : String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/rel_delete.php?a="
+        var url : String = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/rel_delete.php?a="
         
         let idO = g.id
         let tipoReq = g.tipoReq

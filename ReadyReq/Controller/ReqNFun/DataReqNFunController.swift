@@ -46,7 +46,7 @@ class DataReqNFunController: UIViewController, UIPickerViewDelegate, UIPickerVie
           self.picketDate.datePickerMode = .date
         if(myTabBar.idReqNFun != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_search.php?a=\(myTabBar.idReqNFun)"
+            let urlPath: String = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_search.php?a=\(myTabBar.idReqNFun)"
             reqnfun.getReqNFun(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
         }else{
             myTabBar.reqnfun = self.reqnfun
