@@ -76,95 +76,95 @@ class Utils{
         let paramB : String = "b=\(id),\(idO)"
         if mode == AppDelegate.ACTORES {
             if flagTab == AppDelegate.AUTH {
-                url += "a=actauto(idautor,idact)&"
+                url += "a=ActAuto(idautor,idact)&"
                 url += paramB
             }
             if flagTab == AppDelegate.SOUR {
-                url += "a=actfuen(idfuen,idact)&"
+                url += "a=ActFuen(idfuen,idact)&"
                 url += paramB
             }
         }
         if mode == AppDelegate.OBJETIVOS {
             if flagTab == AppDelegate.AUTH {
-                url += "a=objauto(idautor,idobj)&"
+                url += "a=ObjAuto(idautor,idobj)&"
                 url += paramB
             }
             if flagTab == AppDelegate.SOUR {
-                url += "a=objfuen(idfuen,idobj)&";
+                url += "a=ObjFuen(idfuen,idobj)&";
                 url += paramB
             }
             if flagTab == AppDelegate.OBJE {
-                url += "a=objsubobj(idsubobj,idobj)&"
+                url += "a=ObjSubobj(idsubobj,idobj)&"
                 url += paramB
             }
         }
         if mode == AppDelegate.REQ_FUNC {
             if flagTab == AppDelegate.AUTH {
-                url += "a=reqauto(idautor,idreq)&"
+                url += "a=ReqAuto(idautor,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.SOUR {
-                url += "a=reqfuen(idfuen,idreq)&"
+                url += "a=ReqFuen(idfuen,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.OBJE {
-                url += "a=reqobj(idobj,idreq)&"
+                url += "a=ReqObj(idobj,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.REQU {
-                url += "a=reqreqr(idreqr,tiporeq,idreq)&"
+                url += "a=ReqReqR(idreqr,tiporeq,idreq)&"
                 url += "b=\(id),\(tipoReq),\(idO)"
             }
             if flagTab == AppDelegate.ACTO {
-                url += "a=reqact(idact,idreq)&"
+                url += "a=ReqAct(idact,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.SEC_NOR {
-                url += "a=reqsecnor(idreq,descrip)&"
+                url += "a=ReqSecNor(idreq,descrip)&"
                 url += "b=\(idO),'\(descrip)'"
             }
             if flagTab == AppDelegate.SEC_EXC {
-                url += "a=reqsecexc(idreq,descrip)&"
+                url += "a=ReqSecExc(idreq,descrip)&"
                 url += "b=\(idO),'\(descrip)'"
             }
         }
         if mode == AppDelegate.REQ_NO_FUN {
             if flagTab == AppDelegate.AUTH {
-                url += "a=reqnauto(idautor,idreq)&"
+                url += "a=ReqNAuto(idautor,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.SOUR {
-                url += "a=reqnfuen(idfuen,idreq)&"
+                url += "a=ReqNFuen(idfuen,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.OBJE {
-                url += "a=reqnobj(idobj,idreq)&"
+                url += "a=ReqNObj(idobj,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.REQU {
-                url += "a=reqnreqr(idreqr,tiporeq,idreq)&"
+                url += "a=ReqNReqR(idreqr,tiporeq,idreq)&"
                 url += "b=\(id),\(tipoReq),\(idO)"
             }
         }
         if mode == AppDelegate.REQ_INFO {
             if flagTab == AppDelegate.AUTH {
-                url += "a=reqiauto(idautor,idreq)&"
+                url += "a=ReqIAuto(idautor,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.SOUR {
-                url += "a=reqifuen(idfuen,idreq)&"
+                url += "a=ReqIFuen(idfuen,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.OBJE {
-                url += "a=reqiobj(idobj,idreq)&"
+                url += "a=ReqIObj(idobj,idreq)&"
                 url += paramB
             }
             if flagTab == AppDelegate.REQU {
-                url += "a=reqireqr(idreqr,tiporeq,idreq)&"
+                url += "a=ReqIReqR(idreqr,tiporeq,idreq)&"
                 url += "b=\(id),\(tipoReq),\(idO)"
             }
             if flagTab == AppDelegate.DAT_ESP {
-                url += "a=reqidatesp(idreq,descrip)&"
+                url += "a=ReqIDatEsp(idreq,descrip)&"
                 url += "b=\(idO),'\(descrip)'"
             }
         }
@@ -187,75 +187,75 @@ class Utils{
         
         if mode == AppDelegate.ACTORES {
             if flagTab == AppDelegate.AUTH {
-                url += "actauto where idact = \(id) and idautor = \(idO)"
+                url += "ActAuto where idact = \(id) and idautor = \(idO)"
             }
             if flagTab == AppDelegate.SOUR {
-                url += "actfuen where idact = \(id) and idfuen = \(idO)"
+                url += "ActFuen where idact = \(id) and idfuen = \(idO)"
             }
         }
         if mode == AppDelegate.OBJETIVOS {
             if flagTab == AppDelegate.AUTH {
-                url += "objauto where idobj = \(id) and idautor = \(idO)"
+                url += "ObjAuto where idobj = \(id) and idautor = \(idO)"
             }
             if flagTab == AppDelegate.SOUR {
-                url += "objfuen where idobj = \(id) and idfuen = \(idO)"
+                url += "ObjFuen where idobj = \(id) and idfuen = \(idO)"
             }
             if flagTab == AppDelegate.OBJE {
-                url += "objsubobj where idobj = \(id) and idsubobj = \(idO)"
+                url += "ObjSubobj where idobj = \(id) and idsubobj = \(idO)"
             }
         }
         if mode == AppDelegate.REQ_FUNC {
             if flagTab == AppDelegate.AUTH {
-                url += "reqauto where idreq = \(id) and idautor = \(idO)"
+                url += "ReqAuto where idreq = \(id) and idautor = \(idO)"
             }
             if flagTab == AppDelegate.SOUR {
-                url += "reqfuen where idreq = \(id) and idfuen = \(idO)"
+                url += "ReqFuen where idreq = \(id) and idfuen = \(idO)"
             }
             if flagTab == AppDelegate.OBJE {
-                url += "reqobj where idreq = \(id) and idobj = \(idO)"
+                url += "ReqObj where idreq = \(id) and idobj = \(idO)"
             }
             if flagTab == AppDelegate.REQU {
-                url += "reqreqr where idreq = \(id) and idreqr = \(idO) and tiporeq = \(tipoReq)"
+                url += "ReqReqR where idreq = \(id) and idreqr = \(idO) and tiporeq = \(tipoReq)"
             }
             if flagTab == AppDelegate.ACTO {
-                url += "reqact where idreq = \(id) and idact = \(idO)"
+                url += "ReqAct where idreq = \(id) and idact = \(idO)"
             }
             if flagTab == AppDelegate.SEC_NOR {
-                url += "reqsecnor where idreq = \(id) and descrip = '\(descrip)'"
+                url += "ReqSecNor where idreq = \(id) and descrip = '\(descrip)'"
             }
             if flagTab == AppDelegate.SEC_EXC {
-                url += "reqsecexc where idreq = \(id) and descrip = '\(descrip)'"
+                url += "ReqSecExc where idreq = \(id) and descrip = '\(descrip)'"
             }
         }
         if mode == AppDelegate.REQ_NO_FUN {
             if flagTab == AppDelegate.AUTH {
-                url += "reqnauto where idreq = \(id) and idautor = \(idO)"
+                url += "ReqNAuto where idreq = \(id) and idautor = \(idO)"
             }
             if flagTab == AppDelegate.SOUR {
-                url += "reqnfuen where idreq = \(id) and idfuen = \(idO)"
+                url += "ReqNFuen where idreq = \(id) and idfuen = \(idO)"
             }
             if flagTab == AppDelegate.OBJE {
-                url += "reqnobj where idreq = \(id) and idobj = \(idO)"
+                url += "ReqNObj where idreq = \(id) and idobj = \(idO)"
             }
             if flagTab == AppDelegate.REQU {
-                url += "reqnreqr where idreq = \(id) and idreqr = \(idO) and tiporeq = \(tipoReq)"
+                url += "ReqNReqR where idreq = \(id) and idreqr = \(idO) and tiporeq = \(tipoReq)"
             }
         }
         if mode == AppDelegate.REQ_INFO {
             if flagTab == AppDelegate.AUTH {
-                url += "reqiauto where idreq = \(id) and idautor = \(idO)"
+                url += "ReqIAuto where idreq = \(id) and idautor = \(idO)"
             }
             if flagTab == AppDelegate.SOUR {
-                url += "reqifuen where idreq = \(id) and idfuen = \(idO)"
+                url += "ReqIFuen where idreq = \(id) and idfuen = \(idO)"
             }
             if flagTab == AppDelegate.OBJE {
-                url += "reqiobj where idreq = \(id) and idobj = \(idO)"
+                url += "ReqIObj where idreq = \(id) and idobj = \(idO)"
             }
             if flagTab == AppDelegate.REQU {
-                url += "reqireqr where idreq = \(id) and idreqr = \(idO) and tiporeq = \(tipoReq)"
+                url += "ReqIReqR where idreq = \(id) and idreqr = \(idO) and tiporeq = \(tipoReq)"
             }
             if flagTab == AppDelegate.DAT_ESP {
-                url += "reqidatesp where idreq = \(id) and descrip = '\(descrip)'"
+                url += "ReqIDatEsp where idreq = \(id) and descrip = '\(descrip)'"
             }
         }
         url = Utils.convert_Url(url: url)
