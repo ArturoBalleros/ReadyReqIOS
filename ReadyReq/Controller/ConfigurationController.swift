@@ -14,11 +14,13 @@ class ConfigurationController: UIViewController, UITextFieldDelegate {
     // MARK: - Variables
     
     @IBOutlet weak var txtIPServer: UITextField!
+    @IBOutlet weak var txtIPServerMySQL: UITextField!
     @IBOutlet weak var txtUser: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtDatabase: UITextField!
     @IBOutlet weak var txtPort: UITextField!
     @IBOutlet weak var txtPortHttp: UITextField!
+    @IBOutlet weak var switchHTTP: UISwitch!
     var activityIndicator : NVActivityIndicatorView!
     
     // MARK: - View
@@ -63,21 +65,34 @@ class ConfigurationController: UIViewController, UITextFieldDelegate {
     
     @IBAction func But_Connect(_ sender: UIButton) {
         if  let serverIP = self.txtIPServer.text,
+            let serverIPMySQL = self.txtIPServerMySQL.text,
             let user = self.txtUser.text,
             let pass = self.txtPassword.text,
             let database = self.txtDatabase.text,
             let port = self.txtPort.text,
-            let portHTTP = self.txtPortHttp.text {
+            let portHTTP = self.txtPortHttp.text{
+            let HTTP = switchHTTP.isOn ? "https" : "http"
             
             MyUserDefaults.writeUDServerIp(serverIP: serverIP)
+            if(serverIPMySQL.isEmpty){
+                MyUserDefaults.writeUDServerIpMySQL(serverIPMySQL: serverIP)
+                self.txtIPServerMySQL.text = serverIP
+            }else{
+                MyUserDefaults.writeUDServerIpMySQL(serverIPMySQL: serverIPMySQL)
+            }
             MyUserDefaults.writeUDUser(user: user)
             MyUserDefaults.writeUDPass(pass: pass)
             MyUserDefaults.writeUDDatabase(database: database)
             MyUserDefaults.writeUDPort(port: Int(port)!)
             MyUserDefaults.writeUDPortHTTP(portHTTP: Int(portHTTP)!)
+            MyUserDefaults.writeUDHTTP(HTTP: HTTP)
             
-            var urlPath: String = "http://" + serverIP + ":" + portHTTP + "/readyreq/conf_frag_connection_mac.php?"
-            urlPath += "a=" + serverIP + "&"
+            var urlPath: String = HTTP + "://" + serverIP + ":" + portHTTP + "/readyreq/conf_frag_connection.php?"
+            if(serverIPMySQL.isEmpty){
+                urlPath += "a=" + serverIP + "&"
+            }else{
+                urlPath += "a=" + serverIPMySQL + "&"
+            }
             urlPath += "b=" + user + "&"
             urlPath += "c=" + encriptarPass(pass: pass) + "&"
             urlPath += "d=" + database + "&"
@@ -100,6 +115,8 @@ class ConfigurationController: UIViewController, UITextFieldDelegate {
         let database = MyUserDefaults.readUDDatabase()
         let port = String(MyUserDefaults.readUDPort())
         let portHTTP = String(MyUserDefaults.readUDPortHTTP())
+        let serverIPMySQL = MyUserDefaults.readUDServerIpMySQL()
+        let HTTP = MyUserDefaults.readUDHTTP()
         
         if(!serverIp.elementsEqual("No")){
             txtIPServer.text = serverIp
@@ -118,6 +135,17 @@ class ConfigurationController: UIViewController, UITextFieldDelegate {
         }
         if(!portHTTP.elementsEqual("0")){
             txtPortHttp.text = portHTTP
+        }
+        if(!serverIPMySQL.elementsEqual("No")){
+            txtIPServerMySQL.text = serverIPMySQL
+        }
+        if(!HTTP.elementsEqual("No")){
+            switchHTTP.isOn = false
+            if(HTTP.elementsEqual("http")){
+                switchHTTP.isOn = false
+            }else{
+                switchHTTP.isOn = true
+            }
         }
     }
     

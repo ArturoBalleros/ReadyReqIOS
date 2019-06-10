@@ -42,6 +42,16 @@ class MyUserDefaults{
         userD.set(portHTTP , forKey: "portHTTP")
     }
     
+    public static func writeUDServerIpMySQL(serverIPMySQL: String) {
+        let userD = UserDefaults.standard
+        userD.set(serverIPMySQL , forKey: "serverIPMySQL")
+    }
+    
+    public static func writeUDHTTP(HTTP: String) {
+        let userD = UserDefaults.standard
+        userD.set(HTTP , forKey: "HTTP")
+    }
+    
     // MARK: - Read
     
     public static func readUDServerIp() -> String {
@@ -97,6 +107,24 @@ class MyUserDefaults{
             return portHTTP
         }else{
             return 8080
+        }
+    }
+    
+    public static func readUDServerIpMySQL() -> String {
+        let userD = UserDefaults.standard
+        if let serverIPMySQL = userD.string(forKey: "serverIPMySQL"){
+            return serverIPMySQL
+        }else{
+            return "No"
+        }
+    }
+    
+    public static func readUDHTTP() -> String {
+        let userD = UserDefaults.standard
+        if let HTTP = userD.string(forKey: "HTTP"){
+            return HTTP
+        }else{
+            return "No"
         }
     }
     
