@@ -427,11 +427,6 @@ class Utils{
         }
     }
     
-    func DoubleToString (double: Double) -> String {
-        let resul = String(format: "%.2f", double)
-        return resul
-    }
-    
     public static func StringToDate (string: String, MySQL: Bool) -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = (MySQL) ? "yyyy-MM-dd" : "dd-MM-yyyy"

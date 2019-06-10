@@ -29,13 +29,13 @@ class ObjetiveTabBarController: UITabBarController, CUDProtocol, IdProtocol, Sav
         var urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_"
         if(idObjetive != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(objetive.id)&b=\(objetive.name)&c=\(objetive.version)&d=\(Utils.DateToString(date: objetive.date))&"
-             urlPath += "e=\(objetive.descrip)&f=\(objetive.prior)&"
+            urlPath += "e=\(objetive.descrip)&f=\(objetive.prior)&"
             urlPath += "g=\(objetive.urge)&h=\(objetive.esta)&"
             if(objetive.state){ urlPath += "i=\(1)&" }else{ urlPath += "i=\(0)&" }
             urlPath += "j=\(objetive.category)&k=\(objetive.comentary)"
         }else{
             urlPath += "create.php?a=\(objetive.name)&b=\(objetive.version)&c=\(Utils.DateToString(date: objetive.date))&"
-               urlPath += "d=\(objetive.descrip)&e=\(objetive.prior)&"
+            urlPath += "d=\(objetive.descrip)&e=\(objetive.prior)&"
             urlPath += "f=\(objetive.urge)&g=\(objetive.esta)&"
             if(objetive.state){ urlPath += "h=\(1)&" }else{ urlPath += "h=\(0)&" }
             urlPath += "i=\(objetive.category)&j=\(objetive.comentary)"
@@ -60,11 +60,11 @@ class ObjetiveTabBarController: UITabBarController, CUDProtocol, IdProtocol, Sav
             let controller = UIAlertController(title: NSLocalizedString("DELETE", comment: ""), message:NSLocalizedString("WANT_DELETE", comment: "")
                 , preferredStyle: UIAlertController.Style.alert)
             let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
-            
+                
                 let urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_delete.php?a=\(self.objetive.id)"
                 self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let webServices = Utils()
-            webServices.delegateCUD = self
+                let webServices = Utils()
+                webServices.delegateCUD = self
                 webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: self.activityIndicator)
             }
             controller.addAction(action)

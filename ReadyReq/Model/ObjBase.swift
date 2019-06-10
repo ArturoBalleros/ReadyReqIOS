@@ -17,5 +17,5 @@ class ObjBase : NSObject{
     var date = Date()
     var category : Int = 1
     var comentary : String = ""
- 
+    
 }

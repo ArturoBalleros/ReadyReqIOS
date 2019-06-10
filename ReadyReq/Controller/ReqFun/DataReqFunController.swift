@@ -51,7 +51,7 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.pickerComple.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
-          self.picketDate.datePickerMode = .date
+        self.picketDate.datePickerMode = .date
         let urlPath: String = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_frag_list.php"
         let generic = Generic()
         generic.delegate = self

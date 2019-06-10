@@ -43,7 +43,7 @@ class DataReqNFunController: UIViewController, UIPickerViewDelegate, UIPickerVie
         self.pickerEstab.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
-          self.picketDate.datePickerMode = .date
+        self.picketDate.datePickerMode = .date
         if(myTabBar.idReqNFun != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let urlPath: String = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqnfun_search.php?a=\(myTabBar.idReqNFun)"

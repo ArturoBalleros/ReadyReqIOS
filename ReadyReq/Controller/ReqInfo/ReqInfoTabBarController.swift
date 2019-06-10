@@ -63,11 +63,11 @@ class ReqInfoTabBarController: UITabBarController, CUDProtocol, IdProtocol, Save
             let controller = UIAlertController(title: NSLocalizedString("DELETE", comment: ""), message:NSLocalizedString("WANT_DELETE", comment: "")
                 , preferredStyle: UIAlertController.Style.alert)
             let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
-            
+                
                 let urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqinfo_delete.php?a=\(self.reqinfo.id)"
                 self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let webServices = Utils()
-            webServices.delegateCUD = self
+                let webServices = Utils()
+                webServices.delegateCUD = self
                 webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: self.activityIndicator)
                 
             }

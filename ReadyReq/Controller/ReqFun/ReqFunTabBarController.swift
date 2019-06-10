@@ -29,14 +29,14 @@ class ReqFunTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveD
         var urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqfun_"
         if(idReqFun != AppDelegate.NOTHING){
             urlPath += "update.php?a=\(reqfun.id)&b=\(reqfun.name)&c=\(reqfun.version)&d=\(Utils.DateToString(date: reqfun.date))&"
-               urlPath += "e=\(reqfun.descrip)&f=\(reqfun.package)&"
+            urlPath += "e=\(reqfun.descrip)&f=\(reqfun.package)&"
             urlPath += "g=\(reqfun.preCond)&h=\(reqfun.postCond)&i=\(reqfun.comple)&j=\(reqfun.prior)&"
             urlPath += "k=\(reqfun.urge)&l=\(reqfun.esta)&"
             if(reqfun.state){ urlPath += "m=\(1)&" }else{ urlPath += "m=\(0)&" }
             urlPath += "n=\(reqfun.category)&o=\(reqfun.comentary)"
         }else{
             urlPath += "create.php?a=\(reqfun.name)&b=\(reqfun.version)&c=\(Utils.DateToString(date: reqfun.date))&"
-             urlPath += "d=\(reqfun.descrip)&e=\(reqfun.package)&"
+            urlPath += "d=\(reqfun.descrip)&e=\(reqfun.package)&"
             urlPath += "f=\(reqfun.preCond)&g=\(reqfun.postCond)&h=\(reqfun.comple)&i=\(reqfun.prior)&"
             urlPath += "j=\(reqfun.urge)&k=\(reqfun.esta)&"
             if(reqfun.state){ urlPath += "l=\(1)&" }else{ urlPath += "l=\(0)&" }
@@ -64,8 +64,8 @@ class ReqFunTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveD
             let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
                 let urlPath = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqfun_delete.php?a=\(self.reqfun.id)"
                 self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
-            let webServices = Utils()
-            webServices.delegateCUD = self
+                let webServices = Utils()
+                webServices.delegateCUD = self
                 webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: self.activityIndicator)
             }
             controller.addAction(action)

@@ -14,7 +14,6 @@ class Objetive : ObjEstandar {
     // MARK: - Variables
     
     weak var delegate: ObjetiveProtocol!
-   
     
     // MARK: - Methods
     

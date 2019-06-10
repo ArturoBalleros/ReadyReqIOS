@@ -122,14 +122,14 @@ class DataActorController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             actor.descComple = txtDescComple.text!
         }
         if(sender.tag == 6){
-             actor.version = Utils.StringToDouble(string: txtVer.text!)
+            actor.version = Utils.StringToDouble(string: txtVer.text!)
         }
     }
     
     // MARK: - DatePicker
     
     @IBAction func pickerChanged(_ sender: Any) {
-         actor.date = picketDate.date
+        actor.date = picketDate.date
     }
-
+    
 }

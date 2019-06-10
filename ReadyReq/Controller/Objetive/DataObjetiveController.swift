@@ -43,7 +43,7 @@ class DataObjetiveController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.pickerEstab.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
-            self.picketDate.datePickerMode = .date
+        self.picketDate.datePickerMode = .date
         if(myTabBar.idObjetive != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let urlPath: String = MyUserDefaults.readUDHTTP() + "://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/objet_search.php?a=\(myTabBar.idObjetive)"
@@ -151,7 +151,7 @@ class DataObjetiveController: UIViewController, UIPickerViewDelegate, UIPickerVi
             objetive.descrip = txtDescrip.text!
         }
         if(sender.tag == 6){
-               objetive.version = Utils.StringToDouble(string: txtVer.text!)
+            objetive.version = Utils.StringToDouble(string: txtVer.text!)
         }
     }
     
