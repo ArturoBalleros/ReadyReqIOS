@@ -32,6 +32,8 @@ class DataReqInfoController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var labelTimMed: UILabel!
     @IBOutlet weak var sliderTimMax: UISlider!
     @IBOutlet weak var labelTimMax: UILabel!
+    @IBOutlet weak var txtVer: UITextField!
+    @IBOutlet weak var picketDate: UIDatePicker!
     var activityIndicator : NVActivityIndicatorView!
     var reqinfo = ReqInfo()
     
@@ -49,6 +51,7 @@ class DataReqInfoController: UIViewController, UIPickerViewDelegate, UIPickerVie
         self.pickerEstab.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
+         self.picketDate.datePickerMode = .date
         if(myTabBar.idReqInfo != AppDelegate.NOTHING){
             activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqinfo_search.php?a=\(myTabBar.idReqInfo)"
@@ -77,6 +80,8 @@ class DataReqInfoController: UIViewController, UIPickerViewDelegate, UIPickerVie
             self.reqinfo = reqinfo
             myTabBar.reqinfo = self.reqinfo
             txtName.text = self.reqinfo.name
+            txtVer.text = String(self.reqinfo.version)
+            picketDate.date  = self.reqinfo.date
             txtDescrip.text = self.reqinfo.descrip
             sliderOcuMed.value = Float(reqinfo.ocuMed)
             labelOcuMed.text = "\(Int(sliderOcuMed.value))"
@@ -187,6 +192,15 @@ class DataReqInfoController: UIViewController, UIPickerViewDelegate, UIPickerVie
         if(sender.tag == 5){
             reqinfo.descrip = txtDescrip.text!
         }
+        if(sender.tag == 6){
+            reqinfo.version = Utils.StringToDouble(string: txtVer.text!)
+        }
+    }
+    
+    // MARK: - DatePicket
+    
+    @IBAction func pickerChanged(_ sender: Any) {
+        reqinfo.date = picketDate.date
     }
     
 }

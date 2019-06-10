@@ -28,17 +28,19 @@ class ReqInfoTabBarController: UITabBarController, CUDProtocol, IdProtocol, Save
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
         var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqinfo_"
         if(idReqInfo != AppDelegate.NOTHING){
-            urlPath += "update.php?a=\(reqinfo.id)&b=\(reqinfo.name)&c=\(reqinfo.descrip)&d=\(reqinfo.timeMed)&"
-            urlPath += "e=\(reqinfo.timeMax)&f=\(reqinfo.ocuMed)&g=\(reqinfo.ocuMax)&h=\(reqinfo.prior)&"
-            urlPath += "i=\(reqinfo.urge)&j=\(reqinfo.esta)&"
-            if(reqinfo.state){ urlPath += "k=\(1)&" }else{ urlPath += "k=\(0)&" }
-            urlPath += "l=\(reqinfo.category)&m=\(reqinfo.comentary)"
+            urlPath += "update.php?a=\(reqinfo.id)&b=\(reqinfo.name)&c=\(reqinfo.version)&d=\(Utils.DateToString(date: reqinfo.date))&"
+            urlPath += "e=\(reqinfo.descrip)&f=\(reqinfo.timeMed)&"
+            urlPath += "g=\(reqinfo.timeMax)&h=\(reqinfo.ocuMed)&i=\(reqinfo.ocuMax)&j=\(reqinfo.prior)&"
+            urlPath += "k=\(reqinfo.urge)&l=\(reqinfo.esta)&"
+            if(reqinfo.state){ urlPath += "m=\(1)&" }else{ urlPath += "m=\(0)&" }
+            urlPath += "n=\(reqinfo.category)&o=\(reqinfo.comentary)"
         }else{
-            urlPath += "create.php?a=\(reqinfo.name)&b=\(reqinfo.descrip)&c=\(reqinfo.timeMed)&"
-            urlPath += "d=\(reqinfo.timeMax)&e=\(reqinfo.ocuMed)&f=\(reqinfo.ocuMax)&g=\(reqinfo.prior)&"
-            urlPath += "h=\(reqinfo.urge)&i=\(reqinfo.esta)&"
-            if(reqinfo.state){ urlPath += "j=\(1)&" }else{ urlPath += "j=\(0)&" }
-            urlPath += "k=\(reqinfo.category)&l=\(reqinfo.comentary)"
+            urlPath += "create.php?a=\(reqinfo.name)&b=\(reqinfo.version)&c=\(Utils.DateToString(date: reqinfo.date))&"
+            urlPath += "d=\(reqinfo.descrip)&e=\(reqinfo.timeMed)&"
+            urlPath += "f=\(reqinfo.timeMax)&g=\(reqinfo.ocuMed)&h=\(reqinfo.ocuMax)&i=\(reqinfo.prior)&"
+            urlPath += "j=\(reqinfo.urge)&k=\(reqinfo.esta)&"
+            if(reqinfo.state){ urlPath += "l=\(1)&" }else{ urlPath += "l=\(0)&" }
+            urlPath += "m=\(reqinfo.category)&n=\(reqinfo.comentary)"
         }
         urlPath = Utils.convert_Url(url: urlPath)
         if(!urlPath.elementsEqual("ERROR")){
@@ -58,11 +60,20 @@ class ReqInfoTabBarController: UITabBarController, CUDProtocol, IdProtocol, Save
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idReqInfo != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqinfo_delete.php?a=\(reqinfo.id)"
-            activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
+            let controller = UIAlertController(title: NSLocalizedString("DELETE", comment: ""), message:NSLocalizedString("WANT_DELETE", comment: "")
+                , preferredStyle: UIAlertController.Style.alert)
+            let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
+            
+                let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqinfo_delete.php?a=\(self.reqinfo.id)"
+                self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
-            webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
+                webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: self.activityIndicator)
+                
+            }
+            controller.addAction(action)
+            controller.addAction(UIAlertAction(title: NSLocalizedString("CANCEL", comment: ""), style: .cancel, handler: nil))
+            self.present(controller, animated: true)
         }else{
             self.dismiss(animated: true)
         }
