@@ -28,6 +28,8 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var switchState: UISwitch!
     @IBOutlet weak var pickerCateg: UIPickerView!
     @IBOutlet weak var txtComen: UITextView!
+    @IBOutlet weak var txtVer: UITextField!
+    @IBOutlet weak var picketDate: UIDatePicker!
     var activityIndicator : NVActivityIndicatorView!
     var reqfun = ReqFun()
     var items: NSMutableArray = NSMutableArray()
@@ -49,6 +51,7 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.pickerComple.delegate = self
         self.pickerCateg.dataSource = self
         self.pickerCateg.delegate = self
+          self.picketDate.datePickerMode = .date
         let urlPath: String = "http://" + MyUserDefaults.readUDServerIp() + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/paq_frag_list.php"
         let generic = Generic()
         generic.delegate = self
@@ -63,6 +66,8 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
             self.reqfun = reqfun
             myTabBar.reqfun = self.reqfun
             txtName.text = self.reqfun.name
+            txtVer.text = String(self.reqfun.version)
+            picketDate.date  = self.reqfun.date
             txtDescrip.text = self.reqfun.descrip
             txtPreCond.text = self.reqfun.preCond
             txtPostCond.text = self.reqfun.postCond
@@ -208,6 +213,15 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
         if(sender.tag == 7){
             reqfun.postCond = txtPostCond.text!
         }
+        if(sender.tag == 8){
+            reqfun.version = Utils.StringToDouble(string: txtVer.text!)
+        }
+    }
+    
+    // MARK: - DatePicket
+    
+    @IBAction func pickerChanged(_ sender: Any) {
+        reqfun.date = picketDate.date
     }
     
 }

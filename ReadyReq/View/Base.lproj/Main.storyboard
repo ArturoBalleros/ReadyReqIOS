@@ -1663,6 +1663,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="textFieldEditingChange:" destination="oNq-g4-Xeo" eventType="editingDidEnd" id="3Uj-KG-6bE"/>
+                                                </connections>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Yfj-1C-j6h">
                                                 <rect key="frame" x="0.0" y="189" width="394" height="75"/>
@@ -1679,6 +1682,9 @@
                                                             <!--2019-06-05 16:45:28 +0000-->
                                                         </date>
                                                         <locale key="locale" localeIdentifier="es"/>
+                                                        <connections>
+                                                            <action selector="pickerChanged:" destination="oNq-g4-Xeo" eventType="valueChanged" id="30B-fy-BkZ"/>
+                                                        </connections>
                                                     </datePicker>
                                                 </subviews>
                                                 <constraints>
@@ -1860,12 +1866,14 @@
                         <outlet property="pickerPack" destination="M8t-KB-zky" id="Rvb-6p-s1r"/>
                         <outlet property="pickerPrior" destination="Z7U-zG-oIT" id="V6m-Up-oef"/>
                         <outlet property="pickerUrge" destination="2vR-11-h5o" id="Sj0-8r-F7G"/>
+                        <outlet property="picketDate" destination="FOh-Bg-2Xm" id="Why-CK-hhL"/>
                         <outlet property="switchState" destination="wZt-Bx-D1I" id="ub3-ad-LUT"/>
                         <outlet property="txtComen" destination="Nrr-Fk-LVH" id="Mau-FC-5lL"/>
                         <outlet property="txtDescrip" destination="zFZ-bZ-Swc" id="4te-Gw-mPP"/>
                         <outlet property="txtName" destination="O6D-vy-UZo" id="KeX-IV-guz"/>
                         <outlet property="txtPostCond" destination="sbA-LC-e67" id="ybR-FL-VhP"/>
                         <outlet property="txtPreCond" destination="hdH-pz-HUX" id="D6s-Sl-MVT"/>
+                        <outlet property="txtVer" destination="DD8-mc-Nz4" id="a9I-o4-EqN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rjj-nz-iv7" userLabel="First Responder" sceneMemberID="firstResponder"/>

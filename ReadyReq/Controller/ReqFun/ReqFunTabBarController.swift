@@ -28,17 +28,19 @@ class ReqFunTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveD
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
         var urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqfun_"
         if(idReqFun != AppDelegate.NOTHING){
-            urlPath += "update.php?a=\(reqfun.id)&b=\(reqfun.name)&c=\(reqfun.descrip)&d=\(reqfun.package)&"
-            urlPath += "e=\(reqfun.preCond)&f=\(reqfun.postCond)&g=\(reqfun.comple)&h=\(reqfun.prior)&"
-            urlPath += "i=\(reqfun.urge)&j=\(reqfun.esta)&"
-            if(reqfun.state){ urlPath += "k=\(1)&" }else{ urlPath += "k=\(0)&" }
-            urlPath += "l=\(reqfun.category)&m=\(reqfun.comentary)"
+            urlPath += "update.php?a=\(reqfun.id)&b=\(reqfun.name)&c=\(reqfun.version)&d=\(Utils.DateToString(date: reqfun.date))&"
+               urlPath += "e=\(reqfun.descrip)&f=\(reqfun.package)&"
+            urlPath += "g=\(reqfun.preCond)&h=\(reqfun.postCond)&i=\(reqfun.comple)&j=\(reqfun.prior)&"
+            urlPath += "k=\(reqfun.urge)&l=\(reqfun.esta)&"
+            if(reqfun.state){ urlPath += "m=\(1)&" }else{ urlPath += "m=\(0)&" }
+            urlPath += "n=\(reqfun.category)&o=\(reqfun.comentary)"
         }else{
-            urlPath += "create.php?a=\(reqfun.name)&b=\(reqfun.descrip)&c=\(reqfun.package)&"
-            urlPath += "d=\(reqfun.preCond)&e=\(reqfun.postCond)&f=\(reqfun.comple)&g=\(reqfun.prior)&"
-            urlPath += "h=\(reqfun.urge)&i=\(reqfun.esta)&"
-            if(reqfun.state){ urlPath += "j=\(1)&" }else{ urlPath += "j=\(0)&" }
-            urlPath += "k=\(reqfun.category)&l=\(reqfun.comentary)"
+            urlPath += "create.php?a=\(reqfun.name)&b=\(reqfun.version)&c=\(Utils.DateToString(date: reqfun.date))&"
+             urlPath += "d=\(reqfun.descrip)&e=\(reqfun.package)&"
+            urlPath += "f=\(reqfun.preCond)&g=\(reqfun.postCond)&h=\(reqfun.comple)&i=\(reqfun.prior)&"
+            urlPath += "j=\(reqfun.urge)&k=\(reqfun.esta)&"
+            if(reqfun.state){ urlPath += "l=\(1)&" }else{ urlPath += "l=\(0)&" }
+            urlPath += "m=\(reqfun.category)&n=\(reqfun.comentary)"
         }
         urlPath = Utils.convert_Url(url: urlPath)
         if(!urlPath.elementsEqual("ERROR")){
@@ -57,11 +59,18 @@ class ReqFunTabBarController: UITabBarController, CUDProtocol, IdProtocol, SaveD
     
     @IBAction func deletePressed(_ sender: UIBarButtonItem) {
         if(idReqFun != AppDelegate.NOTHING){
-            let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqfun_delete.php?a=\(reqfun.id)"
-            activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
+            let controller = UIAlertController(title: NSLocalizedString("DELETE", comment: ""), message:NSLocalizedString("WANT_DELETE", comment: "")
+                , preferredStyle: UIAlertController.Style.alert)
+            let action = UIAlertAction(title: NSLocalizedString("DELETE", comment: ""), style: .default) { (action) in
+                let urlPath = "http://" + MyUserDefaults.readUDServerIp()  + ":" + String(MyUserDefaults.readUDPortHTTP()) + "/readyreq/reqfun_delete.php?a=\(self.reqfun.id)"
+                self.activityIndicator = ToolsView.beginActivityIndicator(view: self.view)
             let webServices = Utils()
             webServices.delegateCUD = self
-            webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: activityIndicator)
+                webServices.create_update_delete(url: URL(string: urlPath)!, activityIndicator: self.activityIndicator)
+            }
+            controller.addAction(action)
+            controller.addAction(UIAlertAction(title: NSLocalizedString("CANCEL", comment: ""), style: .cancel, handler: nil))
+            self.present(controller, animated: true)
         }else{
             self.dismiss(animated: true)
         }
