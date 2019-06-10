@@ -14,6 +14,9 @@
 /* Class = "UITextField"; placeholder = "Name"; ObjectID = "263-d2-Ch1"; */
 "263-d2-Ch1.placeholder" = "Name";
 
+/* Class = "UITextField"; placeholder = "Version"; ObjectID = "2FX-Sd-HVa"; */
+"2FX-Sd-HVa.placeholder" = "Version";
+
 /* Class = "UILabel"; text = "Stability"; ObjectID = "2JL-RB-oSU"; */
 "2JL-RB-oSU.text" = "Stability";
 
@@ -35,8 +38,8 @@
 /* Class = "UILabel"; text = "Category"; ObjectID = "4Fs-zf-b9D"; */
 "4Fs-zf-b9D.text" = "Category";
 
-/* Class = "UITabBarItem"; title = "Subobjetives"; ObjectID = "5SB-p2-Hcy"; */
-"5SB-p2-Hcy.title" = "Subobjetives";
+/* Class = "UITabBarItem"; title = "Subobjectives"; ObjectID = "5SB-p2-Hcy"; */
+"5SB-p2-Hcy.title" = "Subobjectives";
 
 /* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "5qI-35-AyM"; */
 "5qI-35-AyM.placeholder" = "Search";
@@ -83,6 +86,9 @@
 /* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Anp-HL-BR7"; */
 "Anp-HL-BR7.title" = "Delete";
 
+/* Class = "UILabel"; text = "Date"; ObjectID = "AuS-c4-P6w"; */
+"AuS-c4-P6w.text" = "Date";
+
 /* Class = "UITextField"; placeholder = "Description"; ObjectID = "Axl-d1-2ZX"; */
 "Axl-d1-2ZX.placeholder" = "Description";
 
@@ -95,14 +101,20 @@
 /* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Che-1b-Yxn"; */
 "Che-1b-Yxn.title" = "Delete";
 
+/* Class = "UILabel"; text = "Date"; ObjectID = "CsU-hX-onV"; */
+"CsU-hX-onV.text" = "Date";
+
+/* Class = "UITextField"; placeholder = "Version"; ObjectID = "DD8-mc-Nz4"; */
+"DD8-mc-Nz4.placeholder" = "Version";
+
 /* Class = "UITabBarItem"; title = "Objetives"; ObjectID = "DM7-vd-qcX"; */
 "DM7-vd-qcX.title" = "Objetives";
 
 /* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "DdK-p3-dtq"; */
 "DdK-p3-dtq.placeholder" = "Search";
 
-/* Class = "UILabel"; text = "Maximun"; ObjectID = "ECX-Qc-dTx"; */
-"ECX-Qc-dTx.text" = "Maximun";
+/* Class = "UILabel"; text = "Maximum"; ObjectID = "ECX-Qc-dTx"; */
+"ECX-Qc-dTx.text" = "Maximum";
 
 /* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "EEI-Wb-RPb"; */
 "EEI-Wb-RPb.placeholder" = "Search";
@@ -116,8 +128,8 @@
 /* Class = "UITabBarItem"; title = "Authors"; ObjectID = "EXN-oq-7Ib"; */
 "EXN-oq-7Ib.title" = "Authors";
 
-/* Class = "UITextField"; placeholder = "Organización"; ObjectID = "F6q-lW-lvq"; */
-"F6q-lW-lvq.placeholder" = "Organización";
+/* Class = "UITextField"; placeholder = "Organization"; ObjectID = "F6q-lW-lvq"; */
+"F6q-lW-lvq.placeholder" = "Organization";
 
 /* Class = "UITabBarItem"; title = "Requirements"; ObjectID = "Fje-j7-8Ny"; */
 "Fje-j7-8Ny.title" = "Requirements";
@@ -128,8 +140,8 @@
 /* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Gvq-0v-JKI"; */
 "Gvq-0v-JKI.title" = "Delete";
 
-/* Class = "UITextField"; placeholder = "PortHttp"; ObjectID = "Gzs-b1-el5"; */
-"Gzs-b1-el5.placeholder" = "PortHttp";
+/* Class = "UITextField"; placeholder = "Port Http"; ObjectID = "Gzs-b1-el5"; */
+"Gzs-b1-el5.placeholder" = "Port Http";
 
 /* Class = "UITextField"; text = "8080"; ObjectID = "Gzs-b1-el5"; */
 "Gzs-b1-el5.text" = "8080";
@@ -167,17 +179,23 @@
 /* Class = "UITextField"; placeholder = "Ip Server"; ObjectID = "Knp-x3-3x4"; */
 "Knp-x3-3x4.placeholder" = "Ip Server";
 
+/* Class = "UILabel"; text = "Date"; ObjectID = "LKb-Wt-Lh4"; */
+"LKb-Wt-Lh4.text" = "Date";
+
 /* Class = "UILabel"; text = "Urgency"; ObjectID = "LOP-T7-Own"; */
 "LOP-T7-Own.text" = "Urgency";
 
 /* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "Llx-CY-Koh"; */
 "Llx-CY-Koh.title" = "Delete";
 
+/* Class = "UITextField"; placeholder = "Version"; ObjectID = "M33-8w-2np"; */
+"M33-8w-2np.placeholder" = "Version";
+
 /* Class = "UITabBarItem"; title = "Sources"; ObjectID = "MBw-35-2UA"; */
 "MBw-35-2UA.title" = "Sources";
 
-/* Class = "UITextField"; placeholder = "Port"; ObjectID = "Msv-eX-z0J"; */
-"Msv-eX-z0J.placeholder" = "Port";
+/* Class = "UITextField"; placeholder = "Port MySQL"; ObjectID = "Msv-eX-z0J"; */
+"Msv-eX-z0J.placeholder" = "Port MySQL";
 
 /* Class = "UITextField"; text = "3306"; ObjectID = "Msv-eX-z0J"; */
 "Msv-eX-z0J.text" = "3306";
@@ -211,6 +229,9 @@
 
 /* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "RSB-VZ-rUy"; */
 "RSB-VZ-rUy.title" = "Delete";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "RXA-tj-1IF"; */
+"RXA-tj-1IF.text" = "Date";
 
 /* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "Rhe-Tz-39q"; */
 "Rhe-Tz-39q.placeholder" = "Search";
@@ -248,6 +269,9 @@
 /* Class = "UILabel"; text = "Category"; ObjectID = "V2A-f9-1Zl"; */
 "V2A-f9-1Zl.text" = "Category";
 
+/* Class = "UILabel"; text = "HTTP/HTTPS"; ObjectID = "VJZ-Vx-ERl"; */
+"VJZ-Vx-ERl.text" = "HTTP/HTTPS";
+
 /* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "VJl-4D-sgJ"; */
 "VJl-4D-sgJ.placeholder" = "Search";
 
@@ -281,6 +305,9 @@
 /* Class = "UITabBarItem"; title = "Authors"; ObjectID = "ZX0-jL-S2N"; */
 "ZX0-jL-S2N.title" = "Authors";
 
+/* Class = "UITextField"; placeholder = "Ip Server MySQL"; ObjectID = "ZYe-wz-xUU"; */
+"ZYe-wz-xUU.placeholder" = "Ip Server MySQL";
+
 /* Class = "UILabel"; text = "State"; ObjectID = "ZmP-Nw-UAX"; */
 "ZmP-Nw-UAX.text" = "State";
 
@@ -296,6 +323,9 @@
 /* Class = "UITextField"; placeholder = "Name"; ObjectID = "bHe-dz-7Xg"; */
 "bHe-dz-7Xg.placeholder" = "Name";
 
+/* Class = "UITextField"; placeholder = "Version"; ObjectID = "bbi-Ol-4Ox"; */
+"bbi-Ol-4Ox.placeholder" = "Version";
+
 /* Class = "UITabBarItem"; title = "Data E."; ObjectID = "cIk-Tr-9Lt"; */
 "cIk-Tr-9Lt.title" = "Data E.";
 
@@ -308,8 +338,8 @@
 /* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "cZ9-VK-aKi"; */
 "cZ9-VK-aKi.title" = "Delete";
 
-/* Class = "UILabel"; text = "Maximun"; ObjectID = "csN-mK-bPc"; */
-"csN-mK-bPc.text" = "Maximun";
+/* Class = "UILabel"; text = "Maximum"; ObjectID = "csN-mK-bPc"; */
+"csN-mK-bPc.text" = "Maximum";
 
 /* Class = "UILabel"; text = "Priority"; ObjectID = "ctS-J2-3aU"; */
 "ctS-J2-3aU.text" = "Priority";
@@ -317,8 +347,14 @@
 /* Class = "UIBarButtonItem"; title = "Delete"; ObjectID = "dA8-gP-wCB"; */
 "dA8-gP-wCB.title" = "Delete";
 
+/* Class = "UITextField"; placeholder = "Version"; ObjectID = "dPj-qk-eR3"; */
+"dPj-qk-eR3.placeholder" = "Version";
+
 /* Class = "UILabel"; text = "100"; ObjectID = "dha-86-ud5"; */
 "dha-86-ud5.text" = "100";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "e6l-xG-hZ6"; */
+"e6l-xG-hZ6.text" = "Date";
 
 /* Class = "UIButton"; normalTitle = "X"; ObjectID = "eDI-I7-d0S"; */
 "eDI-I7-d0S.normalTitle" = "X";
@@ -337,6 +373,9 @@
 
 /* Class = "UITabBarItem"; title = "Requirements"; ObjectID = "faF-Q0-SXS"; */
 "faF-Q0-SXS.title" = "Requirements";
+
+/* Class = "UITextField"; placeholder = "Version"; ObjectID = "fcf-mS-L3W"; */
+"fcf-mS-L3W.placeholder" = "Version";
 
 /* Class = "UITabBarItem"; title = "Authors"; ObjectID = "g37-Fb-FmP"; */
 "g37-Fb-FmP.title" = "Authors";
@@ -376,6 +415,9 @@
 
 /* Class = "UIBarButtonItem"; title = "Order"; ObjectID = "m9E-4q-ZS8"; */
 "m9E-4q-ZS8.title" = "Order";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "mDj-lw-dcz"; */
+"mDj-lw-dcz.text" = "Date";
 
 /* Class = "UIBarButtonItem"; title = "Order"; ObjectID = "mO6-ot-dtr"; */
 "mO6-ot-dtr.title" = "Order";
@@ -443,6 +485,9 @@
 /* Class = "UILabel"; text = "Stability"; ObjectID = "wgf-bH-kH1"; */
 "wgf-bH-kH1.text" = "Stability";
 
+/* Class = "UITextField"; placeholder = "Version"; ObjectID = "wk9-Wy-hnT"; */
+"wk9-Wy-hnT.placeholder" = "Version";
+
 /* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "wlW-Ch-lua"; */
 "wlW-Ch-lua.placeholder" = "Search";
 
@@ -472,3 +517,6 @@
 
 /* Class = "UILabel"; text = "Complexity"; ObjectID = "ztb-VX-FWm"; */
 "ztb-VX-FWm.text" = "Complexity";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "zxo-6z-9NK"; */
+"zxo-6z-9NK.text" = "Date";

@@ -66,6 +66,8 @@
 		1F1AC4F721C17AA700C5B2D1 /* SourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceController.swift; sourceTree = "<group>"; };
 		1F1AC4F921C17ABC00C5B2D1 /* ObjetiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjetiveController.swift; sourceTree = "<group>"; };
 		1F3557C921BD615B0066A173 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1F3EAAE922ADE8E40037EE27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		1F3EAAEB22ADE8F20037EE27 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		1F71FA7E21B4331B00A4C5B7 /* ActorListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorListController.swift; sourceTree = "<group>"; };
 		1F71FA8021B433A000A4C5B7 /* ObjetiveListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjetiveListController.swift; sourceTree = "<group>"; };
 		1F71FA8221B4341C00A4C5B7 /* ReqNFunListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqNFunListController.swift; sourceTree = "<group>"; };
@@ -95,8 +97,6 @@
 		1FE2EDC321BF48DF001867AF /* ReqInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqInfo.swift; sourceTree = "<group>"; };
 		1FE2EDC521BF48EF001867AF /* ReqNFun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqNFun.swift; sourceTree = "<group>"; };
 		1FE3BB4021BC8E430058F838 /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
-		1FE4470F228864A500E0D41E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		1FE44711228864AE00E0D41E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1FE749B521BDD53500A98687 /* DataPackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPackageController.swift; sourceTree = "<group>"; };
 		1FE8D5C821B34E8800596929 /* MyUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserDefaults.swift; sourceTree = "<group>"; };
 		1FF2A56021AC69AB0091DE60 /* ReadyReq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadyReq.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -494,8 +494,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1FF2A56A21AC69AB0091DE60 /* Base */,
-				1FE4470F228864A500E0D41E /* es */,
-				1FE44711228864AE00E0D41E /* en */,
+				1F3EAAE922ADE8E40037EE27 /* en */,
+				1F3EAAEB22ADE8F20037EE27 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
