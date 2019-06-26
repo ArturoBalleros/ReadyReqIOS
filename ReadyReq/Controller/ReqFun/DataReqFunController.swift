@@ -1,9 +1,5 @@
 //
-//  DataReqFunController.swift
-//  ReadyReq
-//
-//  Created by Arturo Balleros Albillo on 15/12/2018.
-//  Copyright © 2018 Arturo Balleros Albillo. All rights reserved.
+// Autor: Arturo Balleros Albillo
 //
 
 import UIKit
@@ -96,7 +92,7 @@ class DataReqFunController: UIViewController, UIPickerViewDelegate, UIPickerView
         if(codeError == AppDelegate.SUCCESS_DATA){
             self.items = items
         }
-        items.insert(Generic(id: 0, name: "No paquete"), at: 0)
+        items.insert(Generic(id: 0, name: "No Asignado"), at: 0)
         self.pickerPack.dataSource = self
         self.pickerPack.delegate = self
         Utils.showError(codeError: codeError, controller: self)

@@ -1,3 +1,6 @@
+//
+// Autor: Arturo Balleros Albillo
+//
 
 /* Class = "UILabel"; text = "Categoría"; ObjectID = "1Ms-mR-l3J"; */
 "1Ms-mR-l3J.text" = "Categoría";
@@ -434,8 +437,8 @@
 /* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "nYa-Of-zOz"; */
 "nYa-Of-zOz.placeholder" = "Buscar";
 
-/* Class = "UIButton"; normalTitle = "Connect and Save"; ObjectID = "nc1-vr-u8l"; */
-"nc1-vr-u8l.normalTitle" = "Connect and Save";
+/* Class = "UIButton"; normalTitle = "Conectar y Guardar"; ObjectID = "nc1-vr-u8l"; */
+"nc1-vr-u8l.normalTitle" = "Conectar y Guardar";
 
 /* Class = "UITabBarItem"; title = "S. Exc"; ObjectID = "nm6-kx-b6M"; */
 "nm6-kx-b6M.title" = "S. Exc";

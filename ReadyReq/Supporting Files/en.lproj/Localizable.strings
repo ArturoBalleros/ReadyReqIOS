@@ -1,12 +1,8 @@
-/* 
- Localizable.strings
- ReadyReq
- 
- Created by Arturo Balleros Albillo on 26/11/2018.
- Copyright © 2018 Arturo Balleros Albillo. All rights reserved.
- */
+//
+// Autor: Arturo Balleros Albillo
+//
 
-"TXT_EMPTY" = "Rellene";
+"TXT_EMPTY" = "Fill in the field to continue";
 
 "ERROR_URL" = "Error to convert URL";
 "ERROR_EMPTY_PARAM" = "The are empty parameters";

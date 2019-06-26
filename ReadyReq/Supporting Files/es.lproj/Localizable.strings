@@ -1,10 +1,6 @@
-/* 
- Localizable.strings
- ReadyReq
- 
- Created by Arturo Balleros Albillo on 26/11/2018.
- Copyright © 2018 Arturo Balleros Albillo. All rights reserved.
- */
+//
+// Autor: Arturo Balleros Albillo
+//
 
 "TXT_EMPTY" = "Rellene el campo para continuar";
 

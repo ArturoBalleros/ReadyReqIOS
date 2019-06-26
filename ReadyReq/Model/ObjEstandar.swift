@@ -1,9 +1,5 @@
 //
-//  ObjEstandar.swift
-//  ReadyReq
-//
-//  Created by Arturo Balleros Albillo on 09/06/2019.
-//  Copyright © 2019 Arturo Balleros Albillo. All rights reserved.
+// Autor: Arturo Balleros Albillo
 //
 
 import Foundation

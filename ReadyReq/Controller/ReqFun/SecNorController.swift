@@ -1,9 +1,5 @@
 //
-//  SecNorController.swift
-//  ReadyReq
-//
-//  Created by Arturo Balleros Albillo on 15/12/2018.
-//  Copyright © 2018 Arturo Balleros Albillo. All rights reserved.
+// Autor: Arturo Balleros Albillo
 //
 
 import UIKit
